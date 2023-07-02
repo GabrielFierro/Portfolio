@@ -1,4 +1,3 @@
-import React from 'react';
 import AngleIcon from '../../assets/icons/light-mode/angle-down.svg';
 import MoonIcon from '../../assets/icons/light-mode/moon.svg';
 import Hamburger from '../../assets/icons/light-mode/bars.svg';
