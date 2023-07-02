@@ -8,7 +8,7 @@ export default {
     colors: {
       accent: '#9A51E0',
       title: '#00003D',
-      text: '#3F4258',
+      description: '#3F4258',
       lightMode: '#F3F3F3',
       darkMode: '#1A1A40'
     },
