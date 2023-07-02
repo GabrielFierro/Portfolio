@@ -35,7 +35,7 @@ export default function Header() {
             />
           </li>
         </ul>
-        <section className='text-left  w-auto h-52'>
+        <section className='text-left w-auto h-52 mt-4'>
           <h1 className='text-title text-2xl font-bold pb-1'>
             Hi, I&apos;m Gabriel Fierro
           </h1>
