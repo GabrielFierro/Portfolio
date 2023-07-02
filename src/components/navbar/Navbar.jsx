@@ -4,7 +4,7 @@ import Hamburger from '../../assets/icons/light-mode/bars.svg';
 
 export default function Navbar() {
   return (
-    <div className='fixed h-24 w-full top-0 left-0'>
+    <div className='bg-lightMode fixed h-24 w-full top-0 left-0'>
       <div className='h-full'>
         <ul className='flex flex-row justify-between items-center max-w-screen-xl	m-auto h-full py-0 px-4'>
           <li>Gabriel</li>
