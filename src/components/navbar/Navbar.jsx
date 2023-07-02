@@ -10,12 +10,28 @@ export default function Navbar() {
         <ul className='flex flex-row justify-between items-center max-w-screen-xl	m-auto h-full py-0 px-4 '>
           <li>Gabriel</li>
           <ul className='flex flex-row justify-evenly w-52'>
-            <img src={MoonIcon} alt='moon icon' width='24px' height='24px' />
+            <img
+              className='cursor-pointer'
+              src={MoonIcon}
+              alt='moon icon'
+              width='24px'
+              height='24px'
+            />
             <ul className='flex flex-row'>
               <li>EN</li>
-              <img src={AngleIcon} alt='arrow down icon' />
+              <img
+                className='cursor-pointer'
+                src={AngleIcon}
+                alt='arrow down icon'
+              />
             </ul>
-            <img src={Hamburger} alt='' width='24px' height='24px' />
+            <img
+              className='cursor-pointer'
+              src={Hamburger}
+              alt=''
+              width='24px'
+              height='24px'
+            />
           </ul>
         </ul>
       </div>
