@@ -1,6 +1,6 @@
-import AngleIcon from '../../assets/icons/light-mode/angle-down.svg';
-import MoonIcon from '../../assets/icons/light-mode/moon.svg';
-import Hamburger from '../../assets/icons/light-mode/bars.svg';
+import AngleIcon from '../../assets/icons/angle-down.svg';
+import MoonIcon from '../../assets/icons/moon.svg';
+import Hamburger from '../../assets/icons/bars.svg';
 
 export default function Navbar() {
   return (
