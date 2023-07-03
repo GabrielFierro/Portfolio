@@ -5,7 +5,7 @@ import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 
 export default function Header() {
   return (
-    <main className='bg-lightMode mt-10'>
+    <main className='bg-lightMode mt-10 p-8'>
       <section className='flex flex-col'>
         <ul className='flex flex-row justify-evenly'>
           <ul className='flex flex-col justify-center'>

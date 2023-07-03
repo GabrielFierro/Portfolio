@@ -14,9 +14,11 @@ export default function AboutMe() {
     );
   });
   return (
-    <section className='h-auto mt-12'>
+    <section className='h-auto mt-12 p-8'>
       <article className='h-full flex flex-col justify-evenly'>
-        <h2 className='text-3xl text-title font-semibold pb-4'>About Me</h2>
+        <h2 className='text-3xl text-title font-semibold pb-4 text-center'>
+          About Me
+        </h2>
         <p className='text-md text-description font-normal text-left py-4'>
           Enthusiastic, responsible and self-taught web developer who wants to
           learn web technologies and grow up professionally. I&apos;ve knowledge
