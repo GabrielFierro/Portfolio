@@ -10,6 +10,7 @@ export default {
       title: '#00003D',
       description: '#3F4258',
       email: '#9E9E9E',
+      black: '#000000',
       lightMode: '#F3F3F3',
       darkMode: '#1A1A40'
     },
