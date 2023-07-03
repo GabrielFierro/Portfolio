@@ -1,12 +1,14 @@
 export default function Footer() {
   return (
-    <div className='bg-accent h-60 flex flex-col justify-between mt-12 text-lightMode text-left p-6'>
+    <div className='bg-accent container mt-12 h-72 flex flex-col justify-between text-lightMode text-left p-8'>
       <div>
-        <h2>Gabriel</h2>
-        <p>Frontend Developer</p>
+        <h2 className='font-bold text-3xl'>Gabriel</h2>
+        <p className='font-normal text-md tracking-normal'>
+          Frontend Developer
+        </p>
       </div>
       <div>
-        <ul>
+        <ul className='py-6 space-y-2'>
           <li>Home</li>
           <li>About Me</li>
           <li>Projects</li>
