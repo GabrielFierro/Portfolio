@@ -25,9 +25,9 @@ export default function AboutMe() {
         <ul>
           {technologies}
           <button className='bg-accent text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
-            Download CV
+            <p>Download CV</p>
             <img
-              className='rotate-90'
+              className='rotate-0'
               src={DownloadIcon}
               alt='Arrow right'
               width='24px'
