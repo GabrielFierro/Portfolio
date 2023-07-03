@@ -17,7 +17,7 @@ export default function AboutMe() {
     <section className='h-screen'>
       <article className='h-full flex flex-col justify-evenly'>
         <h2 className='text-3xl text-title font-semibold'>About Me</h2>
-        <p>
+        <p className='text-md text-description font-normal text-left'>
           Enthusiastic, responsible and self-taught web developer who wants to
           learn web technologies and grow up professionally. I&apos;ve knowledge
           in the following technologies.
