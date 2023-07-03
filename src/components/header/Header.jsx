@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import ProfilePicture from '../../assets/images/profile-picture.webp';
 import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
