@@ -10,21 +10,33 @@ export default function Header() {
         <div className='flex flex-row flex-wrap md:flex-nowrap justify-evenly md:justify-center'>
           <ul className=' flex flex-col basis-32 justify-center items-center pl-16'>
             <li className='flex my-2 cursor-pointer'>
-              <img
-                src={GithubIcon}
-                alt='Github icon'
-                width={('24px', '32px')}
-                height={('24px', '32px')}
-              />
+              <a
+                href='https://github.com/GabrielFierro/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  src={GithubIcon}
+                  alt='Github icon'
+                  width={('24px', '32px')}
+                  height={('24px', '32px')}
+                />
+              </a>
             </li>
-            <li className='flex my-2 cursor-pointer'>
-              <img
-                src={LinkedInIcon}
-                alt='Linkedin icon'
-                width={('24px', '32px')}
-                height={('24px', '32px')}
-              />
-            </li>
+            <a
+              href='https://www.linkedin.com/in/gabriel-fierro-2020/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <li className='flex my-2 cursor-pointer'>
+                <img
+                  src={LinkedInIcon}
+                  alt='Linkedin icon'
+                  width={('24px', '32px')}
+                  height={('24px', '32px')}
+                />
+              </li>
+            </a>
           </ul>
           <li className='flex lg:justify-center flex-1 order-1 md:order-3 md:items-center'>
             <img
