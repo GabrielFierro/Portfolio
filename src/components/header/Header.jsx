@@ -28,7 +28,7 @@ export default function Header() {
           </ul>
           <li className='flex lg:justify-center flex-1 order-1 md:order-3 md:items-center'>
             <img
-              className='w-72 md:w-64 lg:w-72 xl:w-72 md:h-56 lg:h-58 xl:h-72 -mt-0 md:mt-6 lg:-ml-12'
+              className='w-72 md:w-64 lg:w-72 xl:w-72 md:h-56 lg:h-58 xl:h-72 -mt-0 md:mt-4 lg:-ml-12'
               src={ProfilePicture}
               alt='Profile picture'
               width='250px'
