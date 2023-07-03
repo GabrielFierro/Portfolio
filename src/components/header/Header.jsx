@@ -51,10 +51,10 @@ export default function Header() {
             <h1 className='text-title text-2xl lg:text-5xl font-bold pb-1'>
               Hi, I&apos;m Gabriel Fierro
             </h1>
-            <h3 className='text-description text-lg font-normal pb-3'>
+            <h3 className='text-description text-lg font-semibold pb-3'>
               Frontend Developer
             </h3>
-            <p className='text-description text-md font-light pb-4'>
+            <p className='text-description text-md font-normal pb-4'>
               Specialized in CSS, Javascript, and React js based in Argentina.
               With experience producing quality work.
             </p>
