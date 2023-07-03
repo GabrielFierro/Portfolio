@@ -16,7 +16,11 @@ export default function Navbar() {
     <div className='bg-lightMode fixed drop-shadow-sm h-24 w-full top-0 left-0 p-4'>
       <div className='h-full'>
         <ul className='flex flex-row justify-between items-center max-w-screen-xl	m-auto h-full py-0 px-4'>
-          <li>Gabriel</li>
+          <li>
+            <h2 className='text-title text-xl lg:text-2xl font-bold'>
+              Gabriel
+            </h2>
+          </li>
           <div className='cursor-pointer hamburger' onClick={handleClick}>
             {click ? (
               <img src={Close} width='24px' height='24px' alt='' />
