@@ -50,30 +50,6 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-          {/* <ul className='flex flex-row justify-evenly w-52'>
-            <img
-              className='cursor-pointer'
-              src={MoonIcon}
-              alt='moon icon'
-              width='24px'
-              height='24px'
-            />
-            <ul className='flex flex-row'>
-              <li>EN</li>
-              <img
-                className='cursor-pointer'
-                src={AngleIcon}
-                alt='arrow down icon'
-              />
-            </ul>
-            <img
-              className='cursor-pointer'
-              src={Hamburger}
-              alt=''
-              width='24px'
-              height='24px'
-            />
-          </ul> */}
         </ul>
       </div>
     </div>
