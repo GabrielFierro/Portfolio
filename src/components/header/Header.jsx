@@ -5,7 +5,10 @@ import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 
 export default function Header() {
   return (
-    <main className='mt-12 md:mt-4 lg:mt-0 py-8 h-screen xs:px-28 sm:px-0 lg:px-32 flex md:items-center'>
+    <main
+      className='mt-12 md:mt-4 lg:mt-0 py-8 h-screen xs:px-28 sm:px-0 lg:px-32 flex md:items-center'
+      id='home'
+    >
       <section className='flex flex-col lg:h-4/6 sm:justify-center h-auto'>
         <div className='flex flex-row flex-wrap md:flex-nowrap justify-evenly md:justify-center'>
           <ul className=' flex flex-col basis-32 justify-center items-center pl-16'>
