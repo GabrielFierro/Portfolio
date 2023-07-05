@@ -27,7 +27,7 @@ export default function AboutMe() {
           <div className='flex flex-col md:flex-row mt-6'>
             <div className='w-full h-3/4 md:h-72 mr-0 md:mr-12'>
               <img
-                className='w-auto h-3/4 md:h-4/5 lg:h-full'
+                className='w-auto h-3/4 md:h-4/5 lg:h-full rounded-md'
                 src={PortfolioScreen}
                 alt=''
                 width='500px'
