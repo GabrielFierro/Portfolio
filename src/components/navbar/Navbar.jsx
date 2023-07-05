@@ -40,12 +40,12 @@ export default function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <a href='#testimonials' onClick={closeMenu}>
+              <a href='#projects' onClick={closeMenu}>
                 Projects
               </a>
             </li>
             <li className='nav-item'>
-              <a href='#demo' onClick={closeMenu}>
+              <a href='#contact' onClick={closeMenu}>
                 Contact Me
               </a>
             </li>
