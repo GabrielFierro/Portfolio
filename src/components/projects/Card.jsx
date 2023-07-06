@@ -19,6 +19,12 @@ export default function Card() {
             {data.title}
           </h2>
           <p className='font-normal text-description'>{data.description}</p>
+          <p>Technologies used</p>
+          <ul className='flex flex-row justify-between mt-6'>
+            {data.stack.map((text) => {
+              return <li key={text}>{text}</li>;
+            })}
+          </ul>
           <div className='flex flex-row space-x-2 justify-center'>
             <button className='bg-accent text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
               <p className='uppercase font-normal'>Demo</p>
