@@ -3,6 +3,7 @@ import { useState } from 'react';
 // import MoonIcon from '../../assets/icons/moon.svg';
 import Hamburger from '../../assets/icons/bars.svg';
 import Close from '../../assets/icons/close.svg';
+import { Link } from 'react-scroll';
 
 import './Navbar.css';
 
@@ -30,24 +31,56 @@ export default function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <a href='/' onClick={closeMenu}>
+              <Link
+                href='#home'
+                spy={true}
+                to='home'
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={closeMenu}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a href='#about' onClick={closeMenu}>
+              <Link
+                href='#about'
+                spy={true}
+                to='about'
+                smooth={true}
+                offset={-110}
+                duration={500}
+                onClick={closeMenu}
+              >
                 About Me
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a href='#projects' onClick={closeMenu}>
+              <Link
+                href='#projects'
+                spy={true}
+                to='projects'
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={closeMenu}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a href='#contact' onClick={closeMenu}>
+              <Link
+                href='#contact'
+                spy={true}
+                to='contact'
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={closeMenu}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
         </ul>
