@@ -12,7 +12,7 @@ export const data = [
     src: Magenta,
     alt: 'Screenshot about the Magenta website',
     description:
-      'We are a World Wide corporation in which we teach, educate and inspire others to follow the path of Front-end development! People often ask how to become a developer, what resources would we recommend, what is the correct order for learning these technologies.',
+      'We are a World Wide corporation in which we teach, educate and inspire others to follow the path of Front-end development!',
     stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'Git']
   },
   {
