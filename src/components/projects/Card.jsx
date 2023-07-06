@@ -10,9 +10,11 @@ export default function Card() {
         key={data.id}
       >
         <img
-          className='rounded-t-lg cursor-pointer'
+          className='rounded-t-lg cursor-pointer h-72'
           src={data.src}
           alt={data.alt}
+          width='400px'
+          height='550px'
         />
         <div className='p-4'>
           <h2 className='text-title font-bold text-2xl py-4'>{data.title}</h2>
