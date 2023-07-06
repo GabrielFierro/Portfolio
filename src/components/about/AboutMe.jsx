@@ -21,7 +21,7 @@ export default function AboutMe() {
           <h2 className='text-3xl lg:text-5xl text-title font-bold text-center'>
             About Me
           </h2>
-          <p className='text-md text-description font-normal text-center mb-4'>
+          <p className='text-md text-description font-normal text-center mb-4 mt-2'>
             My Introduction
           </p>
           <div className='flex flex-col md:flex-row mt-6'>
