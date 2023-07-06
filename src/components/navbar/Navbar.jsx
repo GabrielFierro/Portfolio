@@ -49,7 +49,7 @@ export default function Navbar() {
                 spy={true}
                 to='about'
                 smooth={true}
-                offset={-110}
+                offset={-80}
                 duration={500}
                 onClick={closeMenu}
               >
