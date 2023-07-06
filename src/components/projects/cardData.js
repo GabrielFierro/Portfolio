@@ -21,7 +21,7 @@ export const data = [
     src: Travelling,
     alt: 'Screenshot about the Travelling Landing Page',
     description:
-      'Explore your dream place and find your next destination. We provide all necessary details for tourists who are interested in visiting beautiful destinations.',
+      'Explore your dream place and find your next destination. Join us and discover beautiful destinations.',
     stack: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra UI', 'Git']
   },
   {
@@ -39,7 +39,7 @@ export const data = [
     src: Sunnyside,
     alt: 'Screenshot about the Sunnyside Landing Page',
     description:
-      'We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.',
+      'We are a full-service creative agency specializing in helping brands grow fast with marketing for you.',
     stack: ['HTML', 'CSS', 'Javascript', 'React', 'Git']
   },
   {
@@ -48,7 +48,7 @@ export const data = [
     src: Loopstudios,
     alt: 'Screenshot about the Loopstudios Landing Page',
     description:
-      'The leader in interactive VR. Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe.',
+      'The leader in interactive VR. Loopstudios has been producing world-class virtual reality projects for greatest companies.',
     stack: ['HTML', 'CSS', 'Javascript', 'Git']
   },
   {
