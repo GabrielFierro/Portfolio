@@ -53,7 +53,7 @@ export default function Navbar() {
                 duration={500}
                 onClick={closeMenu}
               >
-                About Me
+                About
               </Link>
             </li>
             <li className='nav-item'>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 duration={500}
                 onClick={closeMenu}
               >
-                Contact Me
+                Contact
               </Link>
             </li>
           </ul>
