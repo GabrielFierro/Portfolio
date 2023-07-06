@@ -12,7 +12,8 @@ export const data = [
     src: Magenta,
     alt: 'Screenshot about the Magenta website',
     description:
-      'We are a World Wide corporation in which we teach, educate and inspire others to follow the path of Front-end development! People often ask how to become a developer, what resources would we recommend, what is the correct order for learning these technologies.'
+      'We are a World Wide corporation in which we teach, educate and inspire others to follow the path of Front-end development! People often ask how to become a developer, what resources would we recommend, what is the correct order for learning these technologies.',
+    stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'Git']
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ export const data = [
     src: Travelling,
     alt: 'Screenshot about the Travelling Landing Page',
     description:
-      'Explore your dream place and find your next destination. We provide all necessary details for tourists who are interested in visiting beautiful destinations.'
+      'Explore your dream place and find your next destination. We provide all necessary details for tourists who are interested in visiting beautiful destinations.',
+    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra UI', 'Git']
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ export const data = [
     src: WeatherApp,
     alt: 'Screenshot about the Weather App',
     description:
-      'It shows the current weather based on your location with temperature in Celsius, an icon, background personalized.'
+      'It shows the current weather based on your location with temperature in Celsius, an icon, background personalized.',
+    stack: ['HTML', 'CSS', 'Javascript', 'Git']
   },
   {
     id: 4,
@@ -36,7 +39,8 @@ export const data = [
     src: Sunnyside,
     alt: 'Screenshot about the Sunnyside Landing Page',
     description:
-      'We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.'
+      'We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.',
+    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Git']
   },
   {
     id: 5,
@@ -44,7 +48,8 @@ export const data = [
     src: Loopstudios,
     alt: 'Screenshot about the Loopstudios Landing Page',
     description:
-      'The leader in interactive VR. Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. '
+      'The leader in interactive VR. Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe.',
+    stack: ['HTML', 'CSS', 'Javascript', 'Git']
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ export const data = [
     src: ProductPreview,
     alt: 'Screenshot about the Product Preview website',
     description:
-      'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.'
+      'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.',
+    stack: ['HTML', 'CSS', 'Git']
   }
 ];
