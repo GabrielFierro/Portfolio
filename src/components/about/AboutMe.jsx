@@ -15,7 +15,10 @@ export default function AboutMe() {
     );
   });
   return (
-    <section className='h-auto mt-12 p-8 xs:px-28 lg:px-32 mb-16' id='about'>
+    <section
+      className='h-auto mt-12 md:mt-24 p-8 xs:px-28 lg:px-32 mb-16'
+      id='about'
+    >
       <article className='h-full flex flex-col justify-between'>
         <div className='h-full flex flex-col justify-evenly'>
           <h2 className='text-3xl lg:text-5xl text-title font-bold text-center'>
