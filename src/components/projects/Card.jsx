@@ -6,11 +6,11 @@ export default function Card() {
   const card = data.map((data) => {
     return (
       <div
-        className='shadow-md shadow-lightMode border border-title rounded-lg max-w-sm mt-12'
+        className='shadow-md shadow-lightMode border border-title rounded-lg max-w-sm md:max-w-screen-lg mt-12 md:flex'
         key={data.id}
       >
         <img
-          className='rounded-t-lg cursor-pointer h-72'
+          className='rounded-t-lg md:rounded-none cursor-pointer h-72 md:h-full'
           src={data.src}
           alt={data.alt}
           width='400px'
@@ -18,10 +18,14 @@ export default function Card() {
         />
         <div className='p-4'>
           <h2 className='text-title font-bold text-2xl py-4'>{data.title}</h2>
-          <p className='font-normal text-description'>{data.description}</p>
+          <p className='font-normal text-description text-xl md:px-8'>
+            {data.description}
+          </p>
           <div className='flex flex-col justify-between mt-6'>
-            <p className='font-semibold text-title'>Technologies used</p>
-            <ul className='flex flex-row flex-wrap justify-around pt-4 font-normal text-title text-sm md:text-lg'>
+            <p className='font-semibold text-title text-lg'>
+              Technologies used
+            </p>
+            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 font-normal text-title text-sm md:text-lg'>
               {data.stack.map((text) => {
                 return <li key={text}>{text}</li>;
               })}
@@ -53,5 +57,8 @@ export default function Card() {
       </div>
     );
   });
-  return <div className='flex flex-col items-center'>{card}</div>;
+  return (
+    // <div className='grid grid-cols-1 grid-rows-6 items-center'>{card}</div>
+    <div className='flex flex-col items-center'>{card}</div>
+  );
 }
