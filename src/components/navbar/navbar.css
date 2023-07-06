@@ -33,6 +33,7 @@
     z-index: 999;
     text-align: center;
     transition: 0.3s;
+    background-color: #f3f3f3;
   }
 
   .nav-menu.active {
