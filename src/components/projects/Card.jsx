@@ -17,13 +17,17 @@ export default function Card() {
           height='550px'
         />
         <div className='p-4'>
-          <h2 className='text-title font-bold text-2xl py-2'>{data.title}</h2>
-          <p className='font-normal text-description text-xl md:px-8'>
+          <h2 className='text-title font-bold text-xl lg:text-2xl py-2'>
+            {data.title}
+          </h2>
+          <p className='font-normal text-description text-md lg:text-xl px-2 lg:px-8'>
             {data.description}
           </p>
           <div className='flex flex-col justify-between mt-6'>
-            <p className='font-semibold text-title text-lg'>Developed with</p>
-            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 font-normal text-title text-sm md:text-lg'>
+            <p className='font-semibold text-title text-md lg:text-lg'>
+              Developed with
+            </p>
+            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 font-normal text-title text-md lg:text-lg'>
               {data.stack.map((text) => {
                 return <li key={text}>{text}</li>;
               })}
