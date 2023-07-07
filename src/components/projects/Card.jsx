@@ -57,8 +57,5 @@ export default function Card() {
       </div>
     );
   });
-  return (
-    // <div className='grid grid-cols-1 grid-rows-6 items-center'>{card}</div>
-    <div className='flex flex-col items-center'>{card}</div>
-  );
+  return <div className='flex flex-col items-center'>{card}</div>;
 }
