@@ -7,12 +7,15 @@ export default {
     },
     colors: {
       accent: '#9A51E0',
+      accentHover: '#8531D3',
       title: '#00003D',
       description: '#3F4258',
       email: '#9E9E9E',
       black: '#000000',
       lightMode: '#F3F3F3',
-      darkMode: '#1A1A40'
+      lightModeHover: '#EEEEEE',
+      darkMode: '#1A1A40',
+      darkModeHover: '#111139'
     },
     extend: {}
   },
