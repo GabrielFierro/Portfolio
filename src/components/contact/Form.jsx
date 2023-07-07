@@ -40,15 +40,9 @@ export default function Form() {
           />
         </div>
       </form>
-      <button className='bg-accent text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
+      <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
         <p>Send Message</p>
-        <img
-          className='rotate-90'
-          src={ArrowAlt}
-          alt='Arrow right'
-          width='24px'
-          height='24px'
-        />
+        <img src={ArrowAlt} alt='Arrow right' width='24px' height='24px' />
       </button>
     </section>
   );

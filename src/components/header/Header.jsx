@@ -61,10 +61,9 @@ export default function Header() {
               Specialized in CSS, Javascript, and React js based in Argentina.
               With experience producing quality work.
             </p>
-            <button className='bg-accent text-lightMode w-36 lg:w-40 font-normal flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
+            <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-normal flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
               <p>Contact Me</p>
               <img
-                className='rotate-90'
                 src={ArrowAlt}
                 alt='Arrow right'
                 width='24px'

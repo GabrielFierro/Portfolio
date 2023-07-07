@@ -46,10 +46,9 @@ export default function AboutMe() {
               <ul className='flex flex-col md:flex-row flex-wrap'>
                 {technologies}
               </ul>
-              <button className='bg-accent text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
+              <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
                 <p>Download CV</p>
                 <img
-                  className='rotate-0'
                   src={DownloadIcon}
                   alt='Arrow right'
                   width='24px'
