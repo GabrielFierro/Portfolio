@@ -33,8 +33,8 @@ export default function Form() {
           />
           <textarea
             type='message'
-            id='email'
-            name='email'
+            id='message'
+            name='message'
             placeholder='Message'
             className='bg-accent bg-opacity-20 placeholder-black text-sm font-light py-12 px-5 rounded-md w-full'
           />
