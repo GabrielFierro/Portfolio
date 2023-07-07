@@ -33,7 +33,6 @@ export default function Card() {
             <button className='bg-lightMode hover:bg-lightModeHover text-accent border font-light flex space-x-2 items-center p-3 rounded mt-8'>
               <p className='uppercase font-normal'>Repo</p>
               <img
-                className='rotate-0'
                 src={LinkIcon}
                 alt='Arrow right'
                 width='24px'
@@ -43,7 +42,6 @@ export default function Card() {
             <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
               <p className='uppercase font-normal'>Demo</p>
               <img
-                className='rotate-90 text-lightMode'
                 src={ArrowAlt}
                 alt='Arrow right'
                 width='24px'
