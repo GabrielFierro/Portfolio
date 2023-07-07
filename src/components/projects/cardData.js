@@ -17,12 +17,12 @@ export const data = [
   },
   {
     id: 2,
-    title: 'Travelling Landing Page',
-    src: Travelling,
-    alt: 'Screenshot about the Travelling Landing Page',
+    title: 'Sunnyside Landing Page',
+    src: Sunnyside,
+    alt: 'Screenshot about the Sunnyside Landing Page',
     description:
-      'Explore your dream place and find your next destination. Join us and discover beautiful destinations.',
-    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra UI', 'Git']
+      'We are a full-service creative agency specializing in helping brands grow fast with marketing for you.',
+    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Git']
   },
   {
     id: 3,
@@ -30,17 +30,17 @@ export const data = [
     src: WeatherApp,
     alt: 'Screenshot about the Weather App',
     description:
-      'It shows the current weather based on your location with temperature in Celsius, an icon, background personalized.',
+      'It shows the current weather based on your location with temperature in Celsius, an icon, and personalized background.',
     stack: ['HTML', 'CSS', 'Javascript', 'API', 'Git']
   },
   {
-    id: 4,
-    title: 'Sunnyside Landing Page',
-    src: Sunnyside,
-    alt: 'Screenshot about the Sunnyside Landing Page',
+    id: 3,
+    title: 'Travelling Landing Page',
+    src: Travelling,
+    alt: 'Screenshot about the Travelling Landing Page',
     description:
-      'We are a full-service creative agency specializing in helping brands grow fast with marketing for you.',
-    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Git']
+      'Explore your dream place and find your next destination. Join us and discover beautiful destinations.',
+    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra UI', 'Git']
   },
   {
     id: 5,
