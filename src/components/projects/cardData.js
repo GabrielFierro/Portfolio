@@ -31,7 +31,7 @@ export const data = [
     alt: 'Screenshot about the Weather App',
     description:
       'It shows the current weather based on your location with temperature in Celsius, an icon, background personalized.',
-    stack: ['HTML', 'CSS', 'Javascript', 'Git']
+    stack: ['HTML', 'CSS', 'Javascript', 'API', 'Git']
   },
   {
     id: 4,
