@@ -10,7 +10,7 @@ export default function Card() {
         key={data.id}
       >
         <img
-          className='rounded-t-lg md:rounded-none cursor-pointer h-72 md:h-full'
+          className='rounded-t-lg md:rounded-none cursor-pointer base:h-56 sm:h-72 md:h-full'
           src={data.src}
           alt={data.alt}
           width='400px'
@@ -27,7 +27,7 @@ export default function Card() {
             <p className='font-semibold text-title text-md lg:text-lg'>
               Developed with
             </p>
-            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 font-normal text-title text-md lg:text-lg'>
+            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 base:mx-6 md:mx-0 font-normal text-title text-md lg:text-lg'>
               {data.stack.map((text) => {
                 return <li key={text}>{text}</li>;
               })}
