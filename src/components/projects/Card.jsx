@@ -22,9 +22,7 @@ export default function Card() {
             {data.description}
           </p>
           <div className='flex flex-col justify-between mt-6'>
-            <p className='font-semibold text-title text-lg'>
-              Technologies used
-            </p>
+            <p className='font-semibold text-title text-lg'>Developed with</p>
             <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 font-normal text-title text-sm md:text-lg'>
               {data.stack.map((text) => {
                 return <li key={text}>{text}</li>;
