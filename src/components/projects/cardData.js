@@ -34,7 +34,7 @@ export const data = [
     stack: ['HTML', 'CSS', 'Javascript', 'API', 'Git']
   },
   {
-    id: 3,
+    id: 4,
     title: 'Travelling Landing Page',
     src: Travelling,
     alt: 'Screenshot about the Travelling Landing Page',
