@@ -68,9 +68,7 @@ export default function Technology() {
   ];
 
   return data.map((tech) => {
-    console.log(tech.src);
     const Svg = tech.src;
-    console.log('objectssssssssssssssssssss: ', Svg);
     return (
       <li
         key={tech.id}
