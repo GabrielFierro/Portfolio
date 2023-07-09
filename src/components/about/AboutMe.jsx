@@ -16,15 +16,15 @@ export default function AboutMe() {
   });
   return (
     <section
-      className='h-auto mt-12 md:mt-24 p-8 xs:px-28 lg:px-32 mb-16'
+      className='h-auto pt-12 md:pt-24 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
       id='about'
     >
       <article className='h-full flex flex-col justify-between'>
         <div className='h-full flex flex-col justify-evenly'>
-          <h2 className='text-3xl lg:text-5xl text-title font-bold text-center'>
+          <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-bold text-center'>
             About Me
           </h2>
-          <p className='text-md text-description font-normal text-center mb-4 mt-2'>
+          <p className='text-md text-description dark:text-gray font-normal text-center mb-4 mt-2'>
             My Introduction
           </p>
           <div className='flex flex-col md:flex-row mt-6'>
@@ -38,7 +38,7 @@ export default function AboutMe() {
               />
             </div>
             <div className='flex flex-col mt-8 md:mt-0'>
-              <p className='text-md text-description font-normal text-left pb-6'>
+              <p className='text-md text-description dark:text-lightMode font-normal text-left pb-6'>
                 Enthusiastic, responsible and self-taught web developer who
                 wants to learn web technologies and grow up professionally.
                 I&apos;ve knowledge in the following technologies.
