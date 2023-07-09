@@ -13,7 +13,9 @@ export const data = [
     alt: 'Screenshot about the Magenta website',
     description:
       'We are a World Wide corporation in which we teach, educate and inspire others to follow the path of Front-end development!',
-    stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'Git']
+    stack: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'Git'],
+    repo: 'https://github.com/magentateam/landingOng',
+    demo: 'https://magentateam.github.io/landingOng/public/'
   },
   {
     id: 2,
@@ -22,7 +24,9 @@ export const data = [
     alt: 'Screenshot about the Sunnyside Landing Page',
     description:
       'We are a full-service creative agency specializing in helping brands grow fast with marketing for you.',
-    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Git']
+    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Git'],
+    repo: 'https://github.com/GabrielFierro/Sunnyside-agency-landing-page',
+    demo: 'https://resonant-kringle-6016a6.netlify.app'
   },
   {
     id: 3,
@@ -31,7 +35,9 @@ export const data = [
     alt: 'Screenshot about the Weather App',
     description:
       'It shows the current weather based on your location with temperature in Celsius, an icon, and personalized background.',
-    stack: ['HTML', 'CSS', 'Javascript', 'API', 'Git']
+    stack: ['HTML', 'CSS', 'Javascript', 'API', 'Git'],
+    repo: 'https://github.com/GabrielFierro/Weather-app',
+    demo: 'https://weather-app-taupe-rho.vercel.app'
   },
   {
     id: 4,
@@ -40,7 +46,9 @@ export const data = [
     alt: 'Screenshot about the Travelling Landing Page',
     description:
       'Explore your dream place and find your next destination. Join us and discover beautiful destinations.',
-    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra UI', 'Git']
+    stack: ['HTML', 'CSS', 'Javascript', 'React', 'Chakra UI', 'Git'],
+    repo: 'https://github.com/GabrielFierro/Travelling-landing-page',
+    demo: 'https://travelling-landing-page.vercel.app'
   },
   {
     id: 5,
@@ -49,7 +57,9 @@ export const data = [
     alt: 'Screenshot about the Loopstudios Landing Page',
     description:
       'The leader in interactive VR. Loopstudios has been producing world-class virtual reality projects for greatest companies.',
-    stack: ['HTML', 'CSS', 'Javascript', 'Git']
+    stack: ['HTML', 'CSS', 'Javascript', 'Git'],
+    repo: 'https://github.com/GabrielFierro/loopstudios-landing-page',
+    demo: 'https://loopstudios-landing-page-jade.vercel.app'
   },
   {
     id: 6,
@@ -58,6 +68,8 @@ export const data = [
     alt: 'Screenshot about the Product Preview website',
     description:
       'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.',
-    stack: ['HTML', 'CSS', 'Git']
+    stack: ['HTML', 'CSS', 'Git'],
+    repo: 'https://github.com/GabrielFierro/3-column-preview-card',
+    demo: 'https://3-column-preview-card-prueba.netlify.app'
   }
 ];
