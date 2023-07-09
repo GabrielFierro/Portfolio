@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import AngleIcon from '../../assets/icons/angle-down.svg';
 import MoonIcon from '../../assets/icons/moon.svg';
 import SunIcon from '../../assets/icons/sun.svg';
@@ -10,20 +10,33 @@ import './Navbar.css';
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
-  const [select, setSelect] = useState(false);
+  const [iconSelect, iconSetSelect] = useState(false);
+  const [theme, setTheme] = useState('light');
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click); // Manage the hamburger menu when it's clicked
 
-  const closeMenu = () => setClick(false);
+  const closeMenu = () => setClick(false); // Close the menu when it's clicked the close icon
 
-  const handleTheme = () => setSelect(!select);
+  const handleIcon = () => iconSetSelect(!iconSelect); // Manage the sun and moon icons clicked
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
-    <div className='bg-lightMode fixed drop-shadow-sm h-24 w-full top-0 left-0 p-4'>
+    <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4'>
       <div className='h-full'>
         <ul className='flex flex-row justify-around items-center max-w-screen-xl	m-auto h-full py-0 px-4'>
           <li>
-            <h2 className='text-title text-xl lg:text-2xl font-bold'>
+            <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-bold'>
               Gabriel
             </h2>
           </li>
@@ -34,7 +47,13 @@ export default function Navbar() {
               <img src={Hamburger} width='24px' height='24px' alt='' />
             )}
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul
+            className={
+              click
+                ? 'nav-menu active'
+                : 'nav-menu text-title dark:text-lightMode'
+            }
+          >
             <li className='nav-item'>
               <Link
                 href='#home'
@@ -88,11 +107,17 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <div className='cursor-pointer' onClick={handleTheme}>
-            {select ? (
-              <img src={MoonIcon} width='24px' height='24px' alt='' />
-            ) : (
+          <div
+            className='cursor-pointer'
+            onClick={() => {
+              handleIcon();
+              handleThemeSwitch();
+            }}
+          >
+            {iconSelect ? (
               <img src={SunIcon} width='24px' height='24px' alt='' />
+            ) : (
+              <img src={MoonIcon} width='24px' height='24px' alt='' />
             )}
           </div>
         </ul>
