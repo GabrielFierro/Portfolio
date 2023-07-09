@@ -32,26 +32,30 @@ export default function Card() {
                 return <li key={text}>{text}</li>;
               })}
             </ul>
-          </div>
-          <div className='flex flex-row space-x-2 justify-center'>
-            <button className='bg-lightMode hover:bg-lightModeHover dark:bg-darkMode dark:hover:bg-card text-accent border font-light flex space-x-2 items-center p-3 rounded mt-8'>
-              <p className='uppercase font-normal'>Repo</p>
-              <img
-                src={LinkIcon}
-                alt='Arrow right'
-                width='24px'
-                height='24px'
-              />
-            </button>
-            <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
-              <p className='uppercase font-normal'>Demo</p>
-              <img
-                src={ArrowAlt}
-                alt='Arrow right'
-                width='24px'
-                height='24px'
-              />
-            </button>
+            <div className='flex flex-row space-x-2 justify-center'>
+              <a href={data.repo} target='_blank' rel='noreferrer'>
+                <button className='bg-lightMode hover:bg-lightModeHover dark:bg-darkMode dark:hover:bg-card text-accent border font-light flex space-x-2 items-center p-3 rounded mt-8'>
+                  <p className='uppercase font-normal'>Repo</p>
+                  <img
+                    src={LinkIcon}
+                    alt='Arrow right'
+                    width='24px'
+                    height='24px'
+                  />
+                </button>
+              </a>
+              <a href={data.demo} target='_blank' rel='noreferrer'>
+                <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
+                  <p className='uppercase font-normal'>Demo</p>
+                  <img
+                    src={ArrowAlt}
+                    alt='Arrow right'
+                    width='24px'
+                    height='24px'
+                  />
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
