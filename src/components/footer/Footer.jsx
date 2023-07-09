@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className='bg-accent mt-12 h-72 w-full flex flex-col justify-between text-lightMode text-left p-8'>
+    <div className='bg-accent h-72 w-full flex flex-col justify-between text-lightMode text-left p-8'>
       <div>
         <h2 className='font-bold text-3xl'>Gabriel</h2>
         <p className='font-normal text-md tracking-normal'>
