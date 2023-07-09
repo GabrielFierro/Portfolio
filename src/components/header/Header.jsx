@@ -2,6 +2,7 @@ import ProfilePicture from '../../assets/images/profile-picture.png';
 import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
+import { Link } from 'react-scroll';
 
 export default function Header() {
   return (
@@ -61,15 +62,24 @@ export default function Header() {
               Specialized in CSS, Javascript, and React js based in Argentina.
               With experience producing quality work.
             </p>
-            <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-normal flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
-              <p>Contact Me</p>
-              <img
-                src={ArrowAlt}
-                alt='Arrow right'
-                width='24px'
-                height='24px'
-              />
-            </button>
+            <Link
+              href='#contact'
+              spy={true}
+              to='contact'
+              smooth={true}
+              offset={-60}
+              duration={900}
+            >
+              <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-normal flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
+                <p>Contact Me</p>
+                <img
+                  src={ArrowAlt}
+                  alt='Arrow right'
+                  width='24px'
+                  height='24px'
+                />
+              </button>
+            </Link>
           </section>
         </div>
       </section>
