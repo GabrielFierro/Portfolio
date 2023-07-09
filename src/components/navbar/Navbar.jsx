@@ -32,7 +32,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4'>
+    <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4 z-10 dark:z-10'>
       <div className='h-full'>
         <ul className='flex flex-row justify-around items-center max-w-screen-xl	m-auto h-full py-0 px-4'>
           <li>
