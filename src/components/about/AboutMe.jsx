@@ -1,19 +1,8 @@
 import Technology from './Technology';
-import { data } from './data';
 import DownloadIcon from '../../assets/icons/download.svg';
 import PortfolioScreen from '../../assets/images/portfolio-screen.png';
 
 export default function AboutMe() {
-  const technologies = data.map((tech) => {
-    return (
-      <Technology
-        key={tech.id}
-        src={tech.src}
-        alt={tech.alt}
-        name={tech.name}
-      ></Technology>
-    );
-  });
   return (
     <section
       className='h-auto pt-12 md:pt-24 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
@@ -44,7 +33,7 @@ export default function AboutMe() {
                 I&apos;ve knowledge in the following technologies.
               </p>
               <ul className='flex flex-col md:flex-row flex-wrap'>
-                {technologies}
+                <Technology />
               </ul>
               <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
                 <p>Download CV</p>
