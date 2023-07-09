@@ -1,4 +1,4 @@
-import ProfilePicture from '../../assets/images/profile-picture.webp';
+import ProfilePicture from '../../assets/images/profile-picture.png';
 import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
@@ -6,7 +6,7 @@ import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 export default function Header() {
   return (
     <main
-      className='mt-12 md:mt-4 lg:mt-0 py-8 h-screen xs:px-28 sm:px-0 lg:px-32 flex md:items-center'
+      className='bg-lightMode dark:bg-darkMode mt-12 md:mt-4 lg:mt-0 py-8 h-screen xs:px-28 sm:px-0 lg:px-32 flex md:items-center'
       id='home'
     >
       <section className='flex flex-col lg:h-4/6 sm:justify-center h-auto'>
@@ -51,13 +51,13 @@ export default function Header() {
             />
           </li>
           <section className='flex flex-col basis-full md:basis-7/12 order-2 md:order-1 text-left w-auto mt-0 md:mt-12 justify-center md:items-stretch p-8'>
-            <h1 className='text-title text-2xl lg:text-5xl font-bold pb-1'>
+            <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-bold pb-1'>
               Hi, I&apos;m Gabriel Fierro
             </h1>
-            <h3 className='text-description text-lg font-semibold pb-3'>
+            <h3 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
               Frontend Developer
             </h3>
-            <p className='text-description text-md font-normal pb-4'>
+            <p className='text-description dark:text-gray text-md font-normal pb-4'>
               Specialized in CSS, Javascript, and React js based in Argentina.
               With experience producing quality work.
             </p>
