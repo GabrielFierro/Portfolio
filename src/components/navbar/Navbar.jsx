@@ -115,9 +115,21 @@ export default function Navbar() {
             }}
           >
             {iconSelect ? (
-              <img src={SunIcon} width='24px' height='24px' alt='' />
+              <img
+                className='transition ease-in-out hover:scale-125 delay-150 duration-500'
+                src={SunIcon}
+                width='24px'
+                height='24px'
+                alt=''
+              />
             ) : (
-              <img src={MoonIcon} width='24px' height='24px' alt='' />
+              <img
+                className='transition ease-in-out hover:scale-125 delay-150 duration-500'
+                src={MoonIcon}
+                width='24px'
+                height='24px'
+                alt=''
+              />
             )}
           </div>
         </ul>
