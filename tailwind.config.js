@@ -7,9 +7,9 @@ export default {
       rubik: ['rubik', 'serif']
     },
     colors: {
-      accent: '#9A51E0',
+      accent: '#8531D3',
       accentDark: '#C49AEB',
-      accentHover: '#8531D3',
+      accentHover: '#9A51E0',
       accentHoverDark: '#D0ACF1',
       title: '#00003D',
       description: '#3F4258',
