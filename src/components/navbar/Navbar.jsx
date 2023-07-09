@@ -60,8 +60,8 @@ export default function Navbar() {
                 spy={true}
                 to='home'
                 smooth={true}
-                offset={0}
-                duration={500}
+                offset={-500}
+                duration={900}
                 onClick={closeMenu}
               >
                 Home
@@ -74,7 +74,7 @@ export default function Navbar() {
                 to='about'
                 smooth={true}
                 offset={-80}
-                duration={500}
+                duration={900}
                 onClick={closeMenu}
               >
                 About
@@ -87,7 +87,7 @@ export default function Navbar() {
                 to='projects'
                 smooth={true}
                 offset={-100}
-                duration={500}
+                duration={900}
                 onClick={closeMenu}
               >
                 Projects
@@ -99,8 +99,8 @@ export default function Navbar() {
                 spy={true}
                 to='contact'
                 smooth={true}
-                offset={-100}
-                duration={500}
+                offset={-90}
+                duration={900}
                 onClick={closeMenu}
               >
                 Contact
