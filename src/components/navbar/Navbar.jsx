@@ -86,7 +86,7 @@ export default function Navbar() {
                 spy={true}
                 to='projects'
                 smooth={true}
-                offset={-100}
+                offset={-70}
                 duration={900}
                 onClick={closeMenu}
               >
