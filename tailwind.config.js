@@ -16,6 +16,7 @@ export default {
       descriptionDark: '#A09BAB',
       gray: '#9E9E9E',
       black: '#000000',
+      red: '#ef4444',
       card: '#1F2127',
       cardLight: '#EEEEEE',
       lightMode: '#F3F3F3',
