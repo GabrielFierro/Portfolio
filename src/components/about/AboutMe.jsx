@@ -1,6 +1,7 @@
 import Technology from './Technology';
 import DownloadIcon from '../../assets/icons/download.svg';
 import PortfolioScreen from '../../assets/images/portfolio-screen.png';
+import MyCV from '../../assets/document/Gabriel_Fierro_CV.pdf';
 
 export default function AboutMe() {
   return (
@@ -35,15 +36,23 @@ export default function AboutMe() {
               <ul className='flex flex-col md:flex-row flex-wrap'>
                 <Technology />
               </ul>
-              <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
-                <p>Download CV</p>
-                <img
-                  src={DownloadIcon}
-                  alt='Arrow right'
-                  width='24px'
-                  height='24px'
-                />
-              </button>
+
+              <a
+                href={MyCV}
+                download='Gabriel_Fierro_CV'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
+                  <p>Download CV</p>
+                  <img
+                    src={DownloadIcon}
+                    alt='Arrow right'
+                    width='24px'
+                    height='24px'
+                  />
+                </button>
+              </a>
             </div>
           </div>
         </div>
