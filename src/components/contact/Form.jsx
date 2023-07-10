@@ -41,7 +41,11 @@ export default function Form() {
           </span>
         </div>
       </div>
-      <form className='mt-16' ref={form} onSubmit={sendEmail}>
+      <form
+        className='mt-16 text-title dark:text-lightMode'
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <label className='after:content-["*"] after:ml-0.5 after:text-red'>
           Name
         </label>
