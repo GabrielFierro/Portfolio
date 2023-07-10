@@ -22,7 +22,7 @@ export default {
       lightMode: '#F3F3F3',
       lightModeHover: '#EEEEEE',
       darkMode: '#1A1C22',
-      darkModeHover: '#111139'
+      darkModeHover: '#11141B'
     },
     extend: {}
   },
