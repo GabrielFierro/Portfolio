@@ -64,7 +64,7 @@ export default function Form() {
           id='email'
           name='user_email'
           placeholder='Email'
-          className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
+          className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-2 rounded-md w-full'
         ></input>
         <p className='mt-2 invisible peer-invalid:visible text-pink-600 text-sm'>
           Please provide a valid email address.
