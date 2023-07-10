@@ -40,17 +40,10 @@ export default function Navbar() {
               Gabriel
             </h2>
           </li>
-          <div className='cursor-pointer hamburger' onClick={handleClick}>
-            {click ? (
-              <img src={Close} width='24px' height='24px' alt='' />
-            ) : (
-              <img src={Hamburger} width='24px' height='24px' alt='' />
-            )}
-          </div>
           <ul
             className={
               click
-                ? 'nav-menu active'
+                ? 'nav-menu active dark:bg-darkMode dark:text-lightMode'
                 : 'nav-menu text-title dark:text-lightMode'
             }
           >
@@ -130,6 +123,13 @@ export default function Navbar() {
                 height='24px'
                 alt=''
               />
+            )}
+          </div>
+          <div className='cursor-pointer hamburger' onClick={handleClick}>
+            {click ? (
+              <img src={Close} width='24px' height='24px' alt='' />
+            ) : (
+              <img src={Hamburger} width='24px' height='24px' alt='' />
             )}
           </div>
         </ul>
