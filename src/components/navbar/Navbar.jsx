@@ -5,6 +5,7 @@ import SunIcon from '../../assets/icons/sun.svg';
 import Hamburger from '../../assets/icons/bars.svg';
 import Close from '../../assets/icons/close.svg';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 import './Navbar.css';
 
@@ -12,6 +13,12 @@ export default function Navbar() {
   const [click, setClick] = useState(false);
   const [iconSelect, iconSetSelect] = useState(false);
   const [theme, setTheme] = useState('light');
+  const options = [
+    { value: 'en', text: 'EN' },
+    { value: 'es', text: 'ES' }
+  ];
+  const [language, setLanguage] = useState(options[0].value);
+  const [t, i18n] = useTranslation('global');
 
   const handleClick = () => setClick(!click); // Manage the hamburger menu when it's clicked
 
@@ -31,10 +38,19 @@ export default function Navbar() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
+  const handleChangeLanguage = (event) => {
+    setLanguage(event.target.value);
+    if (language === 'en') {
+      i18n.changeLanguage('es');
+    } else {
+      i18n.changeLanguage('en');
+    }
+  };
+
   return (
     <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4 z-10 dark:z-10'>
       <div className='h-full'>
-        <ul className='flex flex-row justify-around items-center max-w-screen-xl	m-auto h-full py-0 px-4'>
+        <ul className='flex flex-row justify-around items-center max-w-screen-xl m-auto h-full py-0 px-4'>
           <li>
             <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-bold'>
               Gabriel
@@ -70,7 +86,7 @@ export default function Navbar() {
                 duration={900}
                 onClick={closeMenu}
               >
-                About
+                {t('navbar.about')}
               </Link>
             </li>
             <li className='nav-item'>
@@ -83,7 +99,7 @@ export default function Navbar() {
                 duration={900}
                 onClick={closeMenu}
               >
-                Projects
+                {t('navbar.projects')}
               </Link>
             </li>
             <li className='nav-item'>
@@ -96,7 +112,7 @@ export default function Navbar() {
                 duration={900}
                 onClick={closeMenu}
               >
-                Contact
+                {t('navbar.contact')}
               </Link>
             </li>
           </ul>
@@ -124,6 +140,19 @@ export default function Navbar() {
                 alt=''
               />
             )}
+          </div>
+          <div>
+            <select
+              className='text-title dark:text-lightMode bg-lightMode dark:bg-darkMode'
+              value={language}
+              onChange={handleChangeLanguage}
+            >
+              {options.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.text}
+                </option>
+              ))}
+            </select>
           </div>
           <div className='cursor-pointer hamburger' onClick={handleClick}>
             {click ? (
