@@ -1,21 +1,50 @@
+/* eslint-disable no-unused-vars */
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 import LinkIcon from '../../assets/icons/dark-mode/link.svg';
 import { data } from './cardData';
 import { useTranslation } from 'react-i18next';
+import { motion, useAnimation, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect, useRef } from 'react';
 
 export default function Card() {
   const [t, i18n] = useTranslation('global');
 
+  const cardVariant = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.7 },
+      ease: 'easeIn'
+    },
+    hidden: { opacity: 0, scale: 0, transition: { duration: 0.7 } }
+  };
+
+  const [ref, isInView] = useInView();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    } else {
+      controls.stop;
+    }
+  }, [controls, isInView]);
+
   const card = data.map((data) => {
     return (
-      <div
-        className='bg-cardLight dark:bg-card drop-shadow-md dark:drop-shadow-lg z-0 dark:z-0 rounded-lg max-w-sm md:max-w-screen-lg mt-12 md:flex'
+      <motion.div
         key={data.id}
+        ref={ref}
+        variants={cardVariant}
+        initial='hidden'
+        whileInView='visible'
+        animate={controls}
+        className='bg-cardLight dark:bg-card drop-shadow-md dark:drop-shadow-lg z-0 dark:z-0 rounded-lg max-w-sm md:max-w-screen-lg mt-12 md:flex'
       >
         <img
           className='rounded-t-lg md:rounded-none xl:rounded-md base:h-56 sm:h-72 md:h-full'
           src={data.src}
-          // alt={data.alt}
           alt={t(`projects.cardAlt.${data.id}`)}
           width='400px'
           height='550px'
@@ -37,7 +66,7 @@ export default function Card() {
               })}
             </ul>
             <div className='flex flex-row space-x-2 justify-center'>
-              <a href={data.repo} target='_blank' rel='noreferrer'>
+              <a href={data.code} target='_blank' rel='noreferrer'>
                 <button className='bg-lightMode hover:bg-lightModeHover dark:bg-darkMode dark:hover:bg-card text-accent border font-light flex space-x-2 items-center p-3 rounded mt-8'>
                   <p className='uppercase font-normal'>
                     {t('projects.cardCode')}
@@ -64,7 +93,7 @@ export default function Card() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   });
   return <div className='flex flex-col items-center'>{card}</div>;
