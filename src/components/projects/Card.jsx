@@ -31,7 +31,7 @@ export default function Card() {
             <p className='font-semibold text-title dark:text-lightMode text-md lg:text-lg'>
               {t('projects.cardDeveloped')}
             </p>
-            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 base:mx-6 md:mx-0 font-normal text-title dark:text-gray text-md lg:text-lg'>
+            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 base:mx-6 md:mx-0 font-normal text-title dark:text-gray text-md lg:text-lg space-x-2'>
               {data.stack.map((text) => {
                 return <li key={text}>{text}</li>;
               })}
