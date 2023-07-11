@@ -3,8 +3,11 @@ import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
+  const [t, i18n] = useTranslation('global');
+
   return (
     <main
       className='bg-lightMode dark:bg-darkMode mt-12 md:mt-4 lg:mt-0 py-8 h-screen xs:px-28 sm:px-0 lg:px-32 flex md:items-center'
@@ -53,14 +56,13 @@ export default function Header() {
           </li>
           <section className='flex flex-col basis-full md:basis-7/12 order-2 md:order-1 text-left w-auto mt-0 md:mt-12 justify-center md:items-stretch p-8'>
             <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-bold pb-1'>
-              Hi, I&apos;m Gabriel Fierro
+              {t('header.title')}
             </h1>
             <h3 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
               Frontend Developer
             </h3>
             <p className='text-description dark:text-gray text-md font-normal pb-4'>
-              Specialized in CSS, Javascript, and React js based in Argentina.
-              With experience producing quality work.
+              {t('header.description')}
             </p>
             <Link
               href='#contact'

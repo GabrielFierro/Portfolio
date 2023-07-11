@@ -1,11 +1,14 @@
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
+
 export default function Footer() {
+  const [t, i18n] = useTranslation('global');
   return (
     <div className='bg-accent h-72 w-full flex flex-col justify-between text-lightMode text-left p-8'>
       <div>
         <h2 className='font-bold text-3xl'>Gabriel</h2>
         <p className='font-normal text-md tracking-normal'>
-          Frontend Developer
+          {t('footer.subtitle')}
         </p>
       </div>
       <div>
@@ -28,7 +31,7 @@ export default function Footer() {
             offset={-60}
             duration={900}
           >
-            <li className='py-1'>About Me</li>
+            <li className='py-1'>{t('footer.about')}</li>
           </Link>
           <Link
             href='#projects'
@@ -38,7 +41,7 @@ export default function Footer() {
             offset={-60}
             duration={900}
           >
-            <li className='py-1'>Projects</li>
+            <li className='py-1'>{t('footer.projects')}</li>
           </Link>
           <Link
             href='#contact'
@@ -48,7 +51,7 @@ export default function Footer() {
             offset={-60}
             duration={900}
           >
-            <li className='pt-1'>Contact Me</li>
+            <li className='pt-1'>{t('footer.contact')}</li>
           </Link>
         </ul>
       </div>

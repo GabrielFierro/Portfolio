@@ -2,8 +2,10 @@ import EmailIcon from '../../assets/icons/mail.svg';
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 export default function Form() {
+  const [t, i18n] = useTranslation('global');
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -47,7 +49,7 @@ export default function Form() {
         onSubmit={sendEmail}
       >
         <label className='after:content-["*"] after:ml-0.5 after:text-red'>
-          Name
+          {t('contact.name')}
         </label>
         <input
           type='text'
@@ -57,7 +59,7 @@ export default function Form() {
           className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
         ></input>
         <label className='after:content-["*"] after:ml-0.5 after:text-red'>
-          Email
+          {t('contact.email')}
         </label>
         <input
           type='text'
@@ -66,11 +68,8 @@ export default function Form() {
           placeholder='Email'
           className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-2 rounded-md w-full'
         ></input>
-        <p className='mt-2 invisible peer-invalid:visible text-pink-600 text-sm'>
-          Please provide a valid email address.
-        </p>
         <label className='after:content-["*"] after:ml-0.5 after:text-red'>
-          Message
+          {t('contact.message')}
         </label>
         <textarea
           type='message'
@@ -83,7 +82,7 @@ export default function Form() {
           value='Send'
           className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'
         >
-          <p>Send Message</p>
+          <p>{t('contact.button')}</p>
           <img src={ArrowAlt} alt='Arrow right' width='24px' height='24px' />
         </button>
       </form>

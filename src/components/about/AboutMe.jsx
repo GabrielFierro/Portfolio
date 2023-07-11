@@ -2,20 +2,22 @@ import Technology from './Technology';
 import DownloadIcon from '../../assets/icons/download.svg';
 import PortfolioScreen from '../../assets/images/portfolio-screen.png';
 import MyCV from '../../assets/document/Gabriel_Fierro_CV.pdf';
+import { useTranslation } from 'react-i18next';
 
 export default function AboutMe() {
+  const [t, i18n] = useTranslation('global');
   return (
     <section
-      className='h-auto pt-12 md:pt-24 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
+      className='h-auto pt-12 md:pt-24 px-8 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
       id='about'
     >
       <article className='h-full flex flex-col justify-between'>
         <div className='h-full flex flex-col justify-evenly'>
           <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-bold text-center'>
-            About Me
+            {t('about.title')}
           </h2>
           <p className='text-md text-description dark:text-gray font-normal text-center mb-4 mt-2'>
-            My Introduction
+            {t('about.subtitle')}
           </p>
           <div className='flex flex-col md:flex-row mt-6'>
             <div className='w-full h-3/4 md:h-72 mr-0 md:mr-12'>
@@ -29,9 +31,7 @@ export default function AboutMe() {
             </div>
             <div className='flex flex-col mt-8 md:mt-0'>
               <p className='text-md text-description dark:text-lightMode font-normal text-left pb-6'>
-                Enthusiastic, responsible and self-taught web developer who
-                wants to learn web technologies and grow up professionally.
-                I&apos;ve knowledge in the following technologies.
+                {t('about.description')}
               </p>
               <ul className='flex flex-col md:flex-row flex-wrap'>
                 <Technology />
@@ -44,7 +44,7 @@ export default function AboutMe() {
                 rel='noreferrer'
               >
                 <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
-                  <p>Download CV</p>
+                  <p>{t('about.button')}</p>
                   <img
                     src={DownloadIcon}
                     alt='Arrow right'
