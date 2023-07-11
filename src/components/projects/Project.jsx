@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Card from './Card';
 import { useTranslation } from 'react-i18next';
 

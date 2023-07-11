@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Form from './Form';
 import { useTranslation } from 'react-i18next';
 

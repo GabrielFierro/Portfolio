@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import ProfilePicture from '../../assets/images/profile-picture.png';
 import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
