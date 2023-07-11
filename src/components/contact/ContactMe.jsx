@@ -10,10 +10,10 @@ export default function ContactMe() {
       id='contact'
     >
       <h2 className='text-center text-3xl text-title dark:text-lightMode font-semibold'>
-        {t('projects.title')}
+        {t('contact.title')}
       </h2>
       <p className='text-center text-md text-description dark:text-gray font-normal mt-2'>
-        {t('projects.subtitle')}
+        {t('contact.subtitle')}
       </p>
       <Form />
     </section>
