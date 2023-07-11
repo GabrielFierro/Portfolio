@@ -95,7 +95,7 @@ export default function Navbar() {
                 spy={true}
                 to='projects'
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={900}
                 onClick={closeMenu}
               >
@@ -108,7 +108,7 @@ export default function Navbar() {
                 spy={true}
                 to='contact'
                 smooth={true}
-                offset={-90}
+                offset={-50}
                 duration={900}
                 onClick={closeMenu}
               >
