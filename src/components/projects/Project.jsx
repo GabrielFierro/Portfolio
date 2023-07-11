@@ -5,7 +5,10 @@ export default function Project() {
   const [t, i18n] = useTranslation('global');
 
   return (
-    <section className='pt-16 px-8 bg-lightMode dark:bg-darkMode' id='projects'>
+    <section
+      className='md:-mt-4 pt-16 px-8 bg-lightMode dark:bg-darkMode'
+      id='projects'
+    >
       <article className='h-full flex flex-col text-center'>
         <h2 className='text-3xl text-title dark:text-lightMode font-semibold'>
           {t('projects.title')}
