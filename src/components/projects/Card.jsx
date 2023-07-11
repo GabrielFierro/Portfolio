@@ -1,8 +1,11 @@
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 import LinkIcon from '../../assets/icons/dark-mode/link.svg';
 import { data } from './cardData';
+import { useTranslation } from 'react-i18next';
 
 export default function Card() {
+  const [t, i18n] = useTranslation('global');
+
   const card = data.map((data) => {
     return (
       <div
@@ -12,20 +15,21 @@ export default function Card() {
         <img
           className='rounded-t-lg md:rounded-none xl:rounded-md base:h-56 sm:h-72 md:h-full'
           src={data.src}
-          alt={data.alt}
+          // alt={data.alt}
+          alt={t(`projects.cardAlt.${data.id}`)}
           width='400px'
           height='550px'
         />
         <div className='p-4'>
           <h2 className='text-title dark:text-lightMode font-bold text-xl lg:text-2xl py-2'>
-            {data.title}
+            {t(`projects.cardTitle.${data.id}`)}
           </h2>
           <p className='font-normal text-description dark:text-gray text-md lg:text-xl px-2 lg:px-8'>
-            {data.description}
+            {t(`projects.cardDescription.${data.id}`)}
           </p>
           <div className='flex flex-col justify-between mt-6'>
             <p className='font-semibold text-title dark:text-lightMode text-md lg:text-lg'>
-              Developed with
+              {t('projects.cardDeveloped')}
             </p>
             <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 base:mx-6 md:mx-0 font-normal text-title dark:text-gray text-md lg:text-lg'>
               {data.stack.map((text) => {
@@ -35,7 +39,9 @@ export default function Card() {
             <div className='flex flex-row space-x-2 justify-center'>
               <a href={data.repo} target='_blank' rel='noreferrer'>
                 <button className='bg-lightMode hover:bg-lightModeHover dark:bg-darkMode dark:hover:bg-card text-accent border font-light flex space-x-2 items-center p-3 rounded mt-8'>
-                  <p className='uppercase font-normal'>Repo</p>
+                  <p className='uppercase font-normal'>
+                    {t('projects.cardCode')}
+                  </p>
                   <img
                     src={LinkIcon}
                     alt='Arrow right'
