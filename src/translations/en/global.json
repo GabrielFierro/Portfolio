@@ -47,6 +47,8 @@
     "cardCode": "code"
   },
   "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch",
     "name": "Name",
     "email": "Email",
     "message": "Message",

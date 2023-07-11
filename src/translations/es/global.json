@@ -48,6 +48,8 @@
     "cardCode": "código"
   },
   "contact": {
+    "title": "Contáctame",
+    "subtitle": "Ponte en contacto",
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
