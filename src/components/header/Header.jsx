@@ -30,7 +30,7 @@ export default function Header() {
               {t('header.title')}
             </h1>
             <h3 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
-              Frontend Developer
+              {t('header.subtitle')}
             </h3>
             <p className='text-description dark:text-gray text-md font-normal pb-4'>
               {t('header.description')}
