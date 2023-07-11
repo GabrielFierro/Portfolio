@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "about": "Acerca de mi",
+    "projects": "Proyectos",
+    "contact": "Contáctame"
+  },
+  "header": {
+    "title": "Hola, soy Gabriel Fierro",
+    "subtitle": "Desarrollador Frontend Jr",
+    "description": "Especializado en CSS, Javascript, y React js situado en Argentina. Con experiencia produciendo trabajo de calidad.",
+    "contact": "Contáctame"
+  },
+  "about": {
+    "title": "Acerca de mi",
+    "subtitle": "Mi introducción",
+    "description": "Desarrollador frontend entusiasta, responsable y autodidacta que quiere aprender tecnologías web y crecer profesionalmente. Tengo conocimientos en las siguientes tecnologías.",
+    "button": "Descargar CV"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajos más populares",
+    "cardTitle": ""
+  },
+  "contact": {
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "button": "Enviar Mensaje"
+  },
+  "footer": {
+    "subtitle": "Desarrollador Frontend Jr",
+    "about": "Acerca de mi",
+    "projects": "Proyectos",
+    "contact": "Contáctame"
+  }
+}
