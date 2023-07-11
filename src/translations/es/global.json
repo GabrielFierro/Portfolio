@@ -19,7 +19,33 @@
   "projects": {
     "title": "Proyectos",
     "subtitle": "Trabajos más populares",
-    "cardTitle": ""
+    "cardTitle": [
+      "Magenta",
+      "Sunnyside",
+      "Weather App",
+      "Travelling Landing Page",
+      "Loopstudios",
+      "Product Preview"
+    ],
+    "cardAlt": [
+      "Captura de pantalla acerca de la página web Magenta",
+      "Captura de pantalla acerca de la página web Sunnyside",
+      "Captura de pantalla acerca de the Aplicación de clima",
+      "Captura de pantalla acerca de la Travelling Landing Page",
+      "Captura de pantalla acerca de la página web Loopstudios",
+      "Captura de pantalla acerca de la página web vista previa del producto"
+    ],
+    "cardDeveloped": "Desarrollado con",
+    "cardDescription": [
+      "Somos una corporación a nivel mundial la cual enseña, educa e inspira a otras a seguir el camino del desarrollo Front-end!",
+      "Somos una agencia creativa a servicio completo especializada en ayudar a las marcas, a crecer tan rápido con el marketing perfecto para usted",
+      "La aplicación presenta el clima actual basado en su localización, indicado con temperatura en Celsius, un ícono y fondo personalizado.",
+      "Explore your dream place and find your next destination. Join us and discover beautiful destinations.",
+      "Explora el lugar de sus sueños y encuentre su próximo destino. Únase a nosotros y descubra destinos maravillosos.",
+      "El líder en interacción de RV. Loopstudios ha estado produciendo proyectos de realidad virtual a nivel mundia para grandes compañias.",
+      "Un floral, solar y voluptuosa interpretación compuesta por Olivier Polge, creador de perfumes para la Casa de CHANEL."
+    ],
+    "cardCode": "código"
   },
   "contact": {
     "name": "Nombre",
