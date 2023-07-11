@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Technology from './Technology';
 import DownloadIcon from '../../assets/icons/download.svg';
 import PortfolioScreen from '../../assets/images/portfolio-screen.png';
@@ -8,7 +9,7 @@ export default function AboutMe() {
   const [t, i18n] = useTranslation('global');
   return (
     <section
-      className='h-auto mt-6 sm:mt-0 md:-mt-2 pt-12 md:pt-24 px-8 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
+      className='h-auto mt-0 md:-mt-2 pt-12 md:pt-24 px-8 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
       id='about'
     >
       <article className='h-full flex flex-col justify-between'>
