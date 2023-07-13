@@ -48,37 +48,59 @@ export default function Form() {
         ref={form}
         onSubmit={sendEmail}
       >
-        <label className='after:content-["*"] after:ml-0.5 after:text-red'>
+        <label
+          className='after:content-["*"] after:ml-0.5 after:text-red'
+          htmlFor='name'
+        >
           {t('contact.name')}
         </label>
         <input
           type='text'
           id='name'
           name='user_name'
+          minLength='3'
+          maxLength='20'
+          size='30'
+          required
+          autoComplete='given-name'
           placeholder='Name'
           className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
         ></input>
-        <label className='after:content-["*"] after:ml-0.5 after:text-red'>
+        <label
+          className='after:content-["*"] after:ml-0.5 after:text-red'
+          htmlFor='email'
+        >
           {t('contact.email')}
         </label>
         <input
-          type='text'
+          type='email'
           id='email'
           name='user_email'
+          pattern='.+@globex\.com'
+          size='30'
+          required
+          autoComplete='off'
           placeholder='Email'
           className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-2 rounded-md w-full'
         ></input>
-        <label className='after:content-["*"] after:ml-0.5 after:text-red'>
+        <label
+          className='after:content-["*"] after:ml-0.5 after:text-red'
+          htmlFor='message'
+        >
           {t('contact.message')}
         </label>
         <textarea
           type='message'
           id='message'
           name='message'
+          required
           placeholder='Message'
+          autoComplete='off'
           className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-12 px-5 mb-6 rounded-md w-full'
         />
         <button
+          id='button'
+          name='button'
           value='Send'
           className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'
         >
