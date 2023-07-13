@@ -17,7 +17,12 @@ export default function Card() {
       transition: { duration: 0.7 },
       ease: 'easeIn'
     },
-    hidden: { opacity: 0, scale: 0, transition: { duration: 0.7 } }
+    hidden: {
+      opacity: 0,
+      scale: 0,
+      transition: { duration: 0.7 },
+      ease: 'easeOut'
+    }
   };
 
   const [ref, isInView] = useInView();
