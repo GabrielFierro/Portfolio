@@ -143,6 +143,8 @@ export default function Navbar() {
           </div>
           <div>
             <select
+              id='language-select'
+              name='language-select'
               className='text-title dark:text-lightMode bg-lightMode dark:bg-darkMode'
               value={language}
               onChange={handleChangeLanguage}
