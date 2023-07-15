@@ -18,11 +18,11 @@ export default function Header() {
         <article className='flex flex-row flex-wrap justify-evenly md:justify-center'>
           <div className='flex justify-center flex-1 order-1 md:order-3 md:items-center basis-1/3'>
             <img
-              className='w-72 md:w-64 lg:w-72 md:h-60 lg:h-72 -mt-0 md:-mt-8 lg:-ml-12'
+              className='w-48 md:w-64 lg:w-56 h-48 md:h-60 lg:h-56 my-6 md:my-0 md:-mt-8 lg:-ml-12 rounded-full'
               src={ProfilePicture}
               alt='Profile picture'
-              width='250px'
-              height='250px'
+              width='150px'
+              height='150px'
             />
           </div>
           <section className='bg-lightMode dark:bg-darkMode flex flex-col basis-full md:basis-7/12 order-2 md:order-1 text-left w-auto mt-0 md:mt-20 justify-center md:items-stretch px-8'>
