@@ -58,14 +58,14 @@ export default function Card() {
           <h2 className='text-title dark:text-lightMode font-bold text-xl lg:text-2xl py-2'>
             {t(`projects.cardTitle.${data.id}`)}
           </h2>
-          <p className='font-normal text-description dark:text-gray text-md lg:text-xl px-2 lg:px-8'>
+          <p className='font-normal text-description dark:text-subtitle text-md lg:text-xl px-2 lg:px-8'>
             {t(`projects.cardDescription.${data.id}`)}
           </p>
           <div className='flex flex-col justify-between mt-6'>
             <p className='font-semibold text-title dark:text-lightMode text-md lg:text-lg'>
               {t('projects.cardDeveloped')}
             </p>
-            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 base:mx-6 md:mx-0 font-normal text-title dark:text-gray text-md lg:text-lg space-x-2'>
+            <ul className='flex flex-row flex-wrap justify-around md:justify-evenly pt-4 base:mx-6 md:mx-0 font-normal text-title dark:text-subtitle text-md lg:text-lg space-x-2'>
               {data.stack.map((text) => {
                 return <li key={text}>{text}</li>;
               })}

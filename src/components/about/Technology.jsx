@@ -77,7 +77,7 @@ export default function Technology() {
         <ul className='flex flex-col md:flex-row flex-wrap'>
           <Svg width='24px' height='24px' className='dark:fill-accent' />
         </ul>
-        <p className='text-title dark:text-gray'>{tech.name}</p>
+        <p className='text-title dark:text-subtitle'>{tech.name}</p>
       </li>
     );
   });

@@ -38,7 +38,7 @@ export default function Form() {
           <h2 className='text-3xl text-title dark:text-lightMode font-normal'>
             Email
           </h2>
-          <span className='text-sm text-gray font-light'>
+          <span className='text-sm text-subtitle font-light'>
             fierrogabriel13@gmail.com
           </span>
         </div>

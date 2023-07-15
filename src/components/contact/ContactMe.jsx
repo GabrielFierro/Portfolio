@@ -12,7 +12,7 @@ export default function ContactMe() {
       <h2 className='text-center text-3xl text-title dark:text-lightMode font-semibold'>
         {t('contact.title')}
       </h2>
-      <p className='text-center text-md text-description dark:text-gray font-normal mt-2'>
+      <p className='text-center text-md text-description dark:text-subtitle font-normal mt-2'>
         {t('contact.subtitle')}
       </p>
       <Form />

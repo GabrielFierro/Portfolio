@@ -32,7 +32,7 @@ export default function Header() {
             <h3 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
               {t('header.subtitle')}
             </h3>
-            <p className='text-description dark:text-gray text-md font-normal pb-4'>
+            <p className='text-description dark:text-subtitle text-md font-normal pb-4'>
               {t('header.description')}
             </p>
             <ul className='flex flex-row justify-start items-center py-4 space-x-2 order-1'>

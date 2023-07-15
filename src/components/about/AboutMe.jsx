@@ -17,7 +17,7 @@ export default function AboutMe() {
           <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-bold text-center'>
             {t('about.title')}
           </h2>
-          <p className='text-md text-description dark:text-gray font-normal text-center mb-4 mt-2'>
+          <p className='text-md text-description dark:text-subtitle font-normal text-center mb-4 mt-2'>
             {t('about.subtitle')}
           </p>
           <div className='flex flex-col md:flex-row mt-6'>

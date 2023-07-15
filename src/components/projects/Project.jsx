@@ -14,7 +14,7 @@ export default function Project() {
         <h2 className='text-3xl text-title dark:text-lightMode font-semibold'>
           {t('projects.title')}
         </h2>
-        <p className='text-md text-description dark:text-gray font-normal mt-2'>
+        <p className='text-md text-description dark:text-subtitle font-normal mt-2'>
           {t('projects.subtitle')}
         </p>
         <Card />
