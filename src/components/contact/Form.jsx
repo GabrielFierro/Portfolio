@@ -76,8 +76,7 @@ export default function Form() {
           type='email'
           id='email'
           name='user_email'
-          pattern='.+@globex\.com'
-          size='30'
+          pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$'
           required
           autoComplete='off'
           placeholder='Email'
