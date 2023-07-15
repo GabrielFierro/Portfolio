@@ -7,22 +7,21 @@ export default {
       rubik: ['rubik', 'serif']
     },
     colors: {
-      accent: '#8531D3',
-      accentDark: '#C49AEB',
-      accentHover: '#9A51E0',
-      accentHoverDark: '#D0ACF1',
-      title: '#00003D',
-      subtitle: '#9E9E9E',
-      description: '#3F4258',
-      descriptionDark: '#A09BAB',
-      black: '#000000',
-      red: '#ef4444',
-      card: '#1F2127',
-      cardLight: '#EEEEEE',
-      lightMode: '#F3F3F3',
-      lightModeHover: '#EEEEEE',
-      darkMode: '#1A1C22',
-      darkModeHover: '#11141B'
+      accent: '#8531D3', // Accent color
+      accentDark: '#C49AEB', // Accent color in dark mode
+      accentHover: '#9A51E0', // Accent color on hover in light mode
+      accentHoverDark: '#D0ACF1', // Accent color on hover in dark mode
+      title: '#00003D', // Color for titles
+      subtitle: '#9E9E9E', // Color for subtitles
+      description: '#3F4258', // Color for descriptions like cards, about me and header
+      descriptionDark: '#A09BAB', // Color for descriptions in dark mode
+      red: '#ef4444', // Used in the * on the form
+      card: '#1F2127', // Background of the card in dark mode
+      cardLight: '#EEEEEE', // Background of the card in light mode
+      lightMode: '#F3F3F3', // Secondary color
+      lightModeHover: '#EEEEEE', // Secondary color for light mode on hover
+      darkMode: '#1A1C22', // Secondary color for dark mode
+      darkModeHover: '#11141B' // Secondary color on hover for dark mode
     },
     extend: {}
   },
