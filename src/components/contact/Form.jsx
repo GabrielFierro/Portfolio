@@ -80,7 +80,7 @@ export default function Form() {
           required
           autoComplete='off'
           placeholder='Email'
-          className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-2 rounded-md w-full'
+          className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
         ></input>
         <label
           className='after:content-["*"] after:ml-0.5 after:text-red'
