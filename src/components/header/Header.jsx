@@ -74,7 +74,7 @@ export default function Header() {
               duration={900}
             >
               <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-normal flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
-                <p>{t('header.contact')}</p>
+                <span>{t('header.contact')}</span>
                 <img
                   src={ArrowAlt}
                   alt='Arrow right'
