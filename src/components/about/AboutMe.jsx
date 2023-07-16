@@ -2,11 +2,18 @@
 import Technology from './Technology';
 import DownloadIcon from '../../assets/icons/download.svg';
 import PortfolioScreen from '../../assets/images/portfolio-screen.png';
-import MyCV from '../../assets/document/Gabriel_Fierro_CV.pdf';
 import { useTranslation } from 'react-i18next';
 
 export default function AboutMe() {
   const [t, i18n] = useTranslation('global');
+
+  const handleDownload = () => {
+    const url =
+      'https://drive.google.com/file/d/1J2P_sPeny-OSaVB7M_kXZhbwTLwAvudL/view?usp=sharing';
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <section
       className='h-auto mt-0 md:-mt-2 pt-12 md:pt-24 px-8 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
@@ -38,22 +45,18 @@ export default function AboutMe() {
                 <Technology />
               </ul>
 
-              <a
-                href={MyCV}
-                download='Gabriel_Fierro_CV'
-                target='_blank'
-                rel='noreferrer'
+              <button
+                onClick={handleDownload}
+                className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'
               >
-                <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'>
-                  <p>{t('about.button')}</p>
-                  <img
-                    src={DownloadIcon}
-                    alt='Arrow right'
-                    width='24px'
-                    height='24px'
-                  />
-                </button>
-              </a>
+                <span>{t('about.button')}</span>
+                <img
+                  src={DownloadIcon}
+                  alt='Arrow right'
+                  width='24px'
+                  height='24px'
+                />
+              </button>
             </div>
           </div>
         </div>
