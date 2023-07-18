@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
-import Form from './Form';
+import { lazy } from 'react';
+// import Form from './Form';
+const Form = lazy(() => import('./Form'));
 import { useTranslation } from 'react-i18next';
 
 export default function ContactMe() {
