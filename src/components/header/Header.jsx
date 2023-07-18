@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import ProfilePicture from '../../assets/images/profile-picture.png';
+import ProfilePicture from '../../assets/images/profile-picture.webp';
 import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
@@ -18,7 +18,8 @@ export default function Header() {
         <article className='flex flex-row flex-wrap justify-evenly md:justify-center'>
           <div className='flex justify-center flex-1 order-1 md:order-3 md:items-center basis-1/3'>
             <img
-              className='w-48 md:w-64 lg:w-56 h-48 md:h-60 lg:h-56 my-6 md:my-0 md:-mt-8 lg:-ml-12 rounded-full'
+              loading='lazy'
+              className='w-48 lg:w-56 h-48 lg:h-56 my-6 rounded-full'
               src={ProfilePicture}
               alt='Profile picture'
               width='150px'
@@ -29,9 +30,9 @@ export default function Header() {
             <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-bold pb-1'>
               {t('header.title')}
             </h1>
-            <h3 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
+            <h2 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
               {t('header.subtitle')}
-            </h3>
+            </h2>
             <p className='text-description dark:text-subtitle text-md font-normal pb-4'>
               {t('header.description')}
             </p>
@@ -50,20 +51,20 @@ export default function Header() {
                   />
                 </a>
               </li>
-              <a
-                href='https://www.linkedin.com/in/gabriel-fierro-2020/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <li className='flex my-2 cursor-pointer'>
+              <li className='flex my-2 cursor-pointer'>
+                <a
+                  href='https://www.linkedin.com/in/gabriel-fierro-2020/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <img
                     src={LinkedInIcon}
                     alt='Linkedin icon'
                     width={('24px', '32px')}
                     height={('24px', '32px')}
                   />
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
             <Link
               href='#contact'
