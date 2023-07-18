@@ -1,8 +1,11 @@
 /* eslint-disable no-unused-vars */
-import Technology from './Technology';
+// import Technology from './Technology';
+import { lazy } from 'react';
 import DownloadIcon from '../../assets/icons/download.svg';
-import PortfolioScreen from '../../assets/images/portfolio-screen.png';
+import PortfolioScreen from '../../assets/images/portfolio-screen.webp';
 import { useTranslation } from 'react-i18next';
+
+const Technology = lazy(() => import('./Technology'));
 
 export default function AboutMe() {
   const [t, i18n] = useTranslation('global');
@@ -30,6 +33,7 @@ export default function AboutMe() {
           <div className='flex flex-col md:flex-row mt-6'>
             <div className='w-full h-3/4 md:h-72 mr-0 md:mr-12'>
               <img
+                loading='lazy'
                 className='w-auto h-3/4 md:h-4/5 lg:h-full rounded-md'
                 src={PortfolioScreen}
                 alt=''
@@ -41,10 +45,9 @@ export default function AboutMe() {
               <p className='text-md text-description dark:text-lightMode font-normal text-left pb-6'>
                 {t('about.description')}
               </p>
-              <ul className='flex flex-col md:flex-row flex-wrap'>
+              <div className='flex flex-col md:flex-row flex-wrap'>
                 <Technology />
-              </ul>
-
+              </div>
               <button
                 onClick={handleDownload}
                 className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'
