@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// import AngleIcon from '../../assets/icons/angle-down.svg';
 import MoonIcon from '../../assets/icons/moon.svg';
 import SunIcon from '../../assets/icons/sun.svg';
 import Hamburger from '../../assets/icons/bars.svg';
@@ -50,12 +49,10 @@ export default function Navbar() {
   return (
     <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4 z-10 dark:z-10'>
       <div className='h-full'>
-        <ul className='flex flex-row justify-around items-center max-w-screen-xl m-auto h-full py-0 px-4'>
-          <li>
-            <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-bold'>
-              Gabriel
-            </h2>
-          </li>
+        <div className='flex flex-row justify-around items-center max-w-screen-xl m-auto h-full py-0 px-4'>
+          <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-bold'>
+            Gabriel
+          </h2>
           <ul
             className={
               click
@@ -163,7 +160,7 @@ export default function Navbar() {
               <img src={Hamburger} width='24px' height='24px' alt='' />
             )}
           </div>
-        </ul>
+        </div>
       </div>
     </div>
   );
