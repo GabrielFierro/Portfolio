@@ -18,7 +18,6 @@ export default function Header() {
         <article className='flex flex-row flex-wrap justify-evenly md:justify-center'>
           <div className='flex justify-center flex-1 order-1 md:order-3 md:items-center basis-1/3'>
             <img
-              loading='lazy'
               className='w-48 lg:w-56 h-48 lg:h-56 my-6 rounded-full'
               src={ProfilePicture}
               alt='Profile picture'
