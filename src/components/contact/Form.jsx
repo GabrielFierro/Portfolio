@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import EmailIcon from '../../assets/icons/mail.svg';
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 import { useRef } from 'react';
@@ -38,7 +39,7 @@ export default function Form() {
           <h2 className='text-3xl text-title dark:text-lightMode font-normal'>
             Email
           </h2>
-          <span className='text-sm text-subtitle font-light'>
+          <span className='text-sm text-description font-light'>
             fierrogabriel13@gmail.com
           </span>
         </div>
@@ -64,7 +65,7 @@ export default function Form() {
           required
           autoComplete='given-name'
           placeholder='Name'
-          className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
+          className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder:text-description placeholder:font-regular text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
         ></input>
         <label
           className='after:content-["*"] after:ml-0.5 after:text-red'
@@ -80,7 +81,7 @@ export default function Form() {
           required
           autoComplete='off'
           placeholder='Email'
-          className='peer bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
+          className='peer bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-regular text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
         ></input>
         <label
           className='after:content-["*"] after:ml-0.5 after:text-red'
@@ -95,7 +96,7 @@ export default function Form() {
           required
           placeholder='Message'
           autoComplete='off'
-          className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder-description text-sm font-light py-12 px-5 mb-6 rounded-md w-full'
+          className='bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-regular text-sm font-light py-12 px-5 mb-6 rounded-md w-full'
         />
         <button
           id='button'
