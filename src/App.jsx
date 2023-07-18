@@ -1,20 +1,23 @@
+import { lazy, Suspense } from 'react';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Header from './components/header/Header';
-import AboutMe from './components/about/AboutMe';
-import Project from './components/projects/Project';
-import ContactMe from './components/contact/ContactMe';
-import Footer from './components/footer/Footer';
+const Navbar = lazy(() => import('./components/navbar/Navbar'));
+const Header = lazy(() => import('./components/header/Header'));
+const AboutMe = lazy(() => import('./components/about/AboutMe'));
+const Project = lazy(() => import('./components/projects/Project'));
+const ContactMe = lazy(() => import('./components/contact/ContactMe'));
+const Footer = lazy(() => import('./components/footer/Footer'));
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <AboutMe />
-      <Project />
-      <ContactMe />
-      <Footer />
+      <Suspense fallback={<>Loading...</>}>
+        <Navbar />
+        <Header />
+        <AboutMe />
+        <Project />
+        <ContactMe />
+        <Footer />
+      </Suspense>
     </>
   );
 }
