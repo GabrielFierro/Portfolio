@@ -70,15 +70,15 @@ export default function Technology() {
   return data.map((tech) => {
     const Svg = tech.src;
     return (
-      <li
+      <div
         key={tech.id}
         className='flex flex-row space-x-3 md:space-x-2 px-4 mt-3'
       >
-        <ul className='flex flex-col md:flex-row flex-wrap'>
+        <div className='flex flex-col md:flex-row flex-wrap'>
           <Svg width='24px' height='24px' className='dark:fill-accent' />
-        </ul>
+        </div>
         <p className='text-title dark:text-subtitle'>{tech.name}</p>
-      </li>
+      </div>
     );
   });
 }
