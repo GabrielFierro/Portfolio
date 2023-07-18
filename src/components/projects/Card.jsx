@@ -48,6 +48,7 @@ export default function Card() {
         className='bg-cardLight dark:bg-card drop-shadow-md dark:drop-shadow-lg z-0 dark:z-0 rounded-lg max-w-sm md:max-w-screen-lg mt-12 md:flex'
       >
         <img
+          loading='lazy'
           className='rounded-t-lg md:rounded-none xl:rounded-md base:h-56 sm:h-72 md:h-full'
           src={data.src}
           alt={t(`projects.cardAlt.${data.id}`)}
@@ -77,6 +78,7 @@ export default function Card() {
                     {t('projects.cardCode')}
                   </p>
                   <img
+                    loading='lazy'
                     src={LinkIcon}
                     alt='Arrow right'
                     width='24px'
@@ -88,6 +90,7 @@ export default function Card() {
                 <button className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'>
                   <p className='uppercase font-normal'>Demo</p>
                   <img
+                    loading='lazy'
                     src={ArrowAlt}
                     alt='Arrow right'
                     width='24px'
