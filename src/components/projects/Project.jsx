@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { lazy } from 'react';
-// import Card from './Card';
 const Card = lazy(() => import('./Card'));
 import { useTranslation } from 'react-i18next';
 
