@@ -3,52 +3,19 @@ import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
 import LinkIcon from '../../assets/icons/dark-mode/link.svg';
 import { data } from './cardData';
 import { useTranslation } from 'react-i18next';
-import { motion, useAnimation, AnimatePresence } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { useEffect, useRef } from 'react';
 
 export default function Card() {
   const [t, i18n] = useTranslation('global');
 
-  const cardVariant = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.7 },
-      ease: 'easeIn'
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      transition: { duration: 0.7 },
-      ease: 'easeOut'
-    }
-  };
-
-  const [ref, isInView] = useInView();
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start('visible');
-    } else {
-      controls.stop;
-    }
-  }, [controls, isInView]);
-
   const card = data.map((data) => {
     return (
-      <motion.div
+      <div
         key={data.id}
-        ref={ref}
-        variants={cardVariant}
-        initial='hidden'
-        whileInView='visible'
-        animate={controls}
         className='bg-cardLight dark:bg-card drop-shadow-md dark:drop-shadow-lg z-0 dark:z-0 rounded-lg max-w-sm md:max-w-screen-lg mt-12 md:flex'
       >
         <img
           loading='lazy'
+          decoding='async'
           className='rounded-t-lg md:rounded-none xl:rounded-md base:h-56 sm:h-72 md:h-full'
           src={data.src}
           alt={t(`projects.cardAlt.${data.id}`)}
@@ -101,7 +68,7 @@ export default function Card() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     );
   });
   return <div className='flex flex-col items-center'>{card}</div>;
