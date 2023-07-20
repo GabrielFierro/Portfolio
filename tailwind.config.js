@@ -4,7 +4,7 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      rubik: ['rubik', 'serif']
+      rubik: ['Rubik', 'sans-serif']
     },
     colors: {
       accent: '#8531D3', // Accent color
