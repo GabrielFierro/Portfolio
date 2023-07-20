@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
-import LinkIcon from '../../assets/icons/dark-mode/link.svg';
+import GithubIcon from '../../assets/icons/github-alt.svg';
 import { data } from './cardData';
 import { useTranslation } from 'react-i18next';
 
@@ -46,7 +46,7 @@ export default function Card() {
                   </p>
                   <img
                     loading='lazy'
-                    src={LinkIcon}
+                    src={GithubIcon}
                     alt='Arrow right'
                     width='24px'
                     height='24px'
