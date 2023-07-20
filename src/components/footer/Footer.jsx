@@ -6,13 +6,13 @@ export default function Footer() {
   const [t, i18n] = useTranslation('global');
   return (
     <div className='bg-accent h-72 w-full flex flex-col justify-between text-lightMode text-left p-8'>
-      <>
+      <div>
         <h2 className='font-bold text-3xl'>Gabriel</h2>
         <p className='font-normal text-md tracking-normal'>
           {t('footer.subtitle')}
         </p>
-      </>
-      <div>
+      </div>
+      <>
         <Link
           href='#home'
           spy={true}
@@ -53,7 +53,7 @@ export default function Footer() {
         >
           <span className='pt-1'>{t('footer.contact')}</span>
         </Link>
-      </div>
+      </>
     </div>
   );
 }
