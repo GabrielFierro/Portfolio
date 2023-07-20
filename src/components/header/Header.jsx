@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react';
 import ProfilePicture from '../../assets/images/profile-picture.webp';
 import GithubIcon from '../../assets/icons/github-alt.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-alt.svg';
@@ -8,6 +9,12 @@ import { useTranslation } from 'react-i18next';
 
 export default function Header() {
   const [t, i18n] = useTranslation('global');
+
+  useEffect(() => {
+    // Preload the profile picture image
+    const img = new Image();
+    img.src = ProfilePicture;
+  }, []);
 
   return (
     <main
@@ -26,7 +33,7 @@ export default function Header() {
             />
           </div>
           <section className='bg-lightMode dark:bg-darkMode flex flex-col basis-full md:basis-7/12 order-2 md:order-1 text-left w-auto mt-0 md:mt-20 justify-center md:items-stretch px-8'>
-            <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-bold pb-1'>
+            <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-rubik font-bold pb-1'>
               {t('header.title')}
             </h1>
             <h2 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
@@ -73,7 +80,7 @@ export default function Header() {
               offset={-60}
               duration={900}
             >
-              <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-normal flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
+              <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-rubik font-light flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
                 <span>{t('header.contact')}</span>
                 <img
                   src={ArrowAlt}
