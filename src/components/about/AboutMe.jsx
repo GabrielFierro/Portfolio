@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-// import Technology from './Technology';
+import React, { useMemo } from 'react';
 import { lazy } from 'react';
 import DownloadIcon from '../../assets/icons/download.svg';
 import PortfolioScreen from '../../assets/images/portfolio-screen.webp';
@@ -10,12 +10,17 @@ const Technology = lazy(() => import('./Technology'));
 export default function AboutMe() {
   const [t, i18n] = useTranslation('global');
 
-  const handleDownload = () => {
+  const handleDownload = React.useCallback(() => {
     const url =
       'https://drive.google.com/file/d/1J2P_sPeny-OSaVB7M_kXZhbwTLwAvudL/view?usp=sharing';
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null;
-  };
+  }, []);
+
+  const aboutDescription = useMemo(() => t('about.description'), [t]);
+  const aboutSubtitle = useMemo(() => t('about.subtitle'), [t]);
+  const aboutTitle = useMemo(() => t('about.title'), [t]);
+  const aboutButton = useMemo(() => t('about.button'), [t]);
 
   return (
     <section
@@ -25,10 +30,10 @@ export default function AboutMe() {
       <article className='h-full flex flex-col justify-between'>
         <div className='h-full flex flex-col justify-evenly'>
           <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-bold text-center'>
-            {t('about.title')}
+            {aboutTitle}
           </h2>
           <p className='text-md text-description dark:text-subtitle font-normal text-center mb-4 mt-2'>
-            {t('about.subtitle')}
+            {aboutSubtitle}
           </p>
           <div className='flex flex-col md:flex-row mt-6'>
             <div className='w-full h-3/4 md:h-72 mr-0 md:mr-12'>
@@ -43,7 +48,7 @@ export default function AboutMe() {
             </div>
             <div className='flex flex-col mt-8 md:mt-0'>
               <p className='text-md text-description dark:text-lightMode font-normal text-left pb-6'>
-                {t('about.description')}
+                {aboutDescription}
               </p>
               <div className='flex flex-col md:flex-row flex-wrap'>
                 <Technology />
@@ -52,7 +57,7 @@ export default function AboutMe() {
                 onClick={handleDownload}
                 className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'
               >
-                <span>{t('about.button')}</span>
+                <span>{aboutButton}</span>
                 <img
                   src={DownloadIcon}
                   alt='Arrow right'
