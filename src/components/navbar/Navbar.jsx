@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import MoonIcon from '../../assets/icons/moon.svg';
 import SunIcon from '../../assets/icons/sun.svg';
 import Hamburger from '../../assets/icons/bars.svg';
@@ -12,39 +12,103 @@ export default function Navbar() {
   const [click, setClick] = useState(false);
   const [iconSelect, iconSetSelect] = useState(false);
   const [theme, setTheme] = useState('light');
-  const options = [
-    { value: 'en', text: 'EN' },
-    { value: 'es', text: 'ES' }
-  ];
+  const options = useMemo(
+    () => [
+      { value: 'en', text: 'EN' },
+      { value: 'es', text: 'ES' }
+    ],
+    []
+  );
+
   const [language, setLanguage] = useState(options[0].value);
   const [t, i18n] = useTranslation('global');
 
-  const handleClick = () => setClick(!click); // Manage the hamburger menu when it's clicked
-
-  const closeMenu = () => setClick(false); // Close the menu when it's clicked the close icon
-
-  const handleIcon = () => iconSetSelect(!iconSelect); // Manage the sun and moon icons clicked
+  const handleClick = () => setClick(!click);
+  const closeMenu = () => setClick(false);
+  const handleIcon = () => iconSetSelect(!iconSelect);
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', theme === 'dark');
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
 
   const handleChangeLanguage = (event) => {
-    setLanguage(event.target.value);
-    if (language === 'en') {
-      i18n.changeLanguage('es');
-    } else {
-      i18n.changeLanguage('en');
+    const selectedLanguage = event.target.value;
+    setLanguage(selectedLanguage);
+
+    if (selectedLanguage !== language) {
+      i18n.changeLanguage(selectedLanguage);
     }
   };
+
+  const navMenu = useMemo(
+    () => (
+      <ul
+        className={
+          click
+            ? 'nav-menu active dark:bg-darkMode dark:text-lightMode'
+            : 'nav-menu text-title dark:text-lightMode'
+        }
+      >
+        <li className='nav-item'>
+          <Link
+            href='#home'
+            spy={true}
+            to='home'
+            smooth={true}
+            offset={-500}
+            duration={900}
+            onClick={closeMenu}
+          >
+            Home
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            href='#about'
+            spy={true}
+            to='about'
+            smooth={true}
+            offset={-80}
+            duration={900}
+            onClick={closeMenu}
+          >
+            {t('navbar.about')}
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            href='#projects'
+            spy={true}
+            to='projects'
+            smooth={true}
+            offset={-60}
+            duration={900}
+            onClick={closeMenu}
+          >
+            {t('navbar.projects')}
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            href='#contact'
+            spy={true}
+            to='contact'
+            smooth={true}
+            offset={-50}
+            duration={900}
+            onClick={closeMenu}
+          >
+            {t('navbar.contact')}
+          </Link>
+        </li>
+      </ul>
+    ),
+    [click, t]
+  );
 
   return (
     <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4 z-10 dark:z-10'>
@@ -53,66 +117,7 @@ export default function Navbar() {
           <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-bold'>
             Gabriel
           </h2>
-          <ul
-            className={
-              click
-                ? 'nav-menu active dark:bg-darkMode dark:text-lightMode'
-                : 'nav-menu text-title dark:text-lightMode'
-            }
-          >
-            <li className='nav-item'>
-              <Link
-                href='#home'
-                spy={true}
-                to='home'
-                smooth={true}
-                offset={-500}
-                duration={900}
-                onClick={closeMenu}
-              >
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                href='#about'
-                spy={true}
-                to='about'
-                smooth={true}
-                offset={-80}
-                duration={900}
-                onClick={closeMenu}
-              >
-                {t('navbar.about')}
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                href='#projects'
-                spy={true}
-                to='projects'
-                smooth={true}
-                offset={-60}
-                duration={900}
-                onClick={closeMenu}
-              >
-                {t('navbar.projects')}
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                href='#contact'
-                spy={true}
-                to='contact'
-                smooth={true}
-                offset={-50}
-                duration={900}
-                onClick={closeMenu}
-              >
-                {t('navbar.contact')}
-              </Link>
-            </li>
-          </ul>
+          {navMenu}
           <div
             className='cursor-pointer'
             onClick={() => {
