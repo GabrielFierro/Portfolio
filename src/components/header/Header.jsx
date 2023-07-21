@@ -72,24 +72,6 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <Link
-              href='#contact'
-              spy={true}
-              to='contact'
-              smooth={true}
-              offset={-60}
-              duration={900}
-            >
-              <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-rubik-regular flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
-                <span>{t('header.contact')}</span>
-                <img
-                  src={ArrowAlt}
-                  alt='Arrow right'
-                  width='24px'
-                  height='24px'
-                />
-              </button>
-            </Link>
           </section>
         </article>
       </section>
