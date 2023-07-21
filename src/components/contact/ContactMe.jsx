@@ -26,7 +26,7 @@ export default function ContactMe() {
             <h2 className='text-3xl text-title dark:text-lightMode font-rubik-regular'>
               Email
             </h2>
-            <span className='text-sm text-description font-rubik-light'>
+            <span className='text-sm text-description dark:text-subtitle font-rubik-light'>
               fierrogabriel13@gmail.com
             </span>
           </div>
