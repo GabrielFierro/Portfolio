@@ -114,7 +114,10 @@ export default function Navbar() {
     <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4 z-10 dark:z-10'>
       <div className='h-full'>
         <div className='flex flex-row justify-around items-center max-w-screen-xl m-auto h-full py-0 px-4'>
-          <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-rubik-bold'>
+          <h2
+            id='name'
+            className='text-title dark:text-lightMode text-xl lg:text-2xl font-rubik-bold'
+          >
             Gabriel
           </h2>
           {navMenu}
