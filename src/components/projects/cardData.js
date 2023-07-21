@@ -68,7 +68,7 @@ export const data = [
     alt: 'Screenshot about the Product Preview website',
     description:
       'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.',
-    stack: ['HTML', 'CSS', 'Tailwind', 'Git'],
+    stack: ['HTML', 'CSS', 'Git'],
     code: 'https://github.com/GabrielFierro/3-column-preview-card',
     demo: 'https://3-column-preview-card-prueba.netlify.app'
   }
