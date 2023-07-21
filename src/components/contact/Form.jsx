@@ -49,8 +49,8 @@ export default function Form() {
         size='30'
         required
         autoComplete='given-name'
-        placeholder='Name'
-        className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder:text-description placeholder:font-regular text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
+        placeholder={t('contact.name')}
+        className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder:text-description placeholder:font-rubik-regular text-sm font-rubik-light py-6 px-5 mb-6 rounded-md w-full'
       ></input>
       <label
         className='after:content-["*"] after:ml-0.5 after:text-red'
@@ -66,7 +66,7 @@ export default function Form() {
         required
         autoComplete='off'
         placeholder='Email'
-        className='peer bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-regular text-sm font-light py-6 px-5 mb-6 rounded-md w-full'
+        className='peer bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-rubik-regular text-sm font-rubik-light py-6 px-5 mb-6 rounded-md w-full'
       ></input>
       <label
         className='after:content-["*"] after:ml-0.5 after:text-red'
@@ -79,15 +79,15 @@ export default function Form() {
         id='message'
         name='message'
         required
-        placeholder='Message'
+        placeholder={t('contact.message')}
         autoComplete='off'
-        className='bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-regular text-sm font-light py-12 px-5 mb-6 rounded-md w-full'
+        className='bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-rubik-regular text-sm font-rubik-light py-12 px-5 mb-6 rounded-md w-full'
       />
       <button
         id='button'
         name='button'
         value='Send'
-        className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8'
+        className='bg-accent hover:bg-accentHover text-lightMode font-rubik-light flex space-x-2 items-center p-3 rounded mt-8'
       >
         <p>{t('contact.button')}</p>
         <img src={ArrowAlt} alt='Arrow right' width='24px' height='24px' />
