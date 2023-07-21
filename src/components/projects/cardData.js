@@ -1,4 +1,4 @@
-import Loopstudios from '../../assets/images/Loopstudios.webp';
+import Loopstudios from '../../assets/images/loopstudios.webp';
 import Magenta from '../../assets/images/magenta.webp';
 import ProductPreview from '../../assets/images/product-preview.webp';
 import Sunnyside from '../../assets/images/sunnyside.webp';
