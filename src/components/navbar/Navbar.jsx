@@ -6,7 +6,7 @@ import Close from '../../assets/icons/close.svg';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 
-import './Navbar.css';
+import './navbar.css';
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
