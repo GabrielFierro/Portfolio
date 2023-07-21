@@ -23,6 +23,8 @@ I've been learning **React js** working in different projects for the last time 
 Preview
 </h3>
 
-<p>Now let's take a look to my Portfolio from the design that I'm created on Figma.</p>
+<p>Now let's take a look to my Portfolio from the design that I'm created on Figma for light and dark mode.</p>
 
 </div>
+
+![Design preview for the Portfolio Desktop in Light Mode](./src/assets/design/Desktop-Light-Mode.png)
