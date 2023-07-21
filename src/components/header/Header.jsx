@@ -33,13 +33,13 @@ export default function Header() {
             />
           </div>
           <section className='bg-lightMode dark:bg-darkMode flex flex-col basis-full md:basis-7/12 order-2 md:order-1 text-left w-auto mt-0 md:mt-20 justify-center md:items-stretch px-8'>
-            <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-rubik font-bold pb-1'>
+            <h1 className='text-title dark:text-lightMode text-2xl lg:text-5xl font-rubik-bold pb-1'>
               {t('header.title')}
             </h1>
-            <h2 className='text-description dark:text-lightMode text-lg font-semibold pb-3'>
+            <h2 className='text-description dark:text-lightMode text-lg font-rubik-semibold pb-3'>
               {t('header.subtitle')}
             </h2>
-            <p className='text-description dark:text-subtitle text-md font-normal pb-4'>
+            <p className='text-description dark:text-subtitle text-md font-rubik-regular pb-4'>
               {t('header.description')}
             </p>
             <ul className='flex flex-row justify-start items-center py-4 space-x-2 order-1'>
@@ -80,7 +80,7 @@ export default function Header() {
               offset={-60}
               duration={900}
             >
-              <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-rubik font-light flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
+              <button className='bg-accent hover:bg-accentHover text-lightMode w-36 lg:w-40 font-rubik-regular flex space-x-2 items-center lg:justify-center p-3 lg:p-4 rounded'>
                 <span>{t('header.contact')}</span>
                 <img
                   src={ArrowAlt}

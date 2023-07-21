@@ -29,10 +29,10 @@ export default function AboutMe() {
     >
       <article className='h-full flex flex-col justify-between'>
         <div className='h-full flex flex-col justify-evenly'>
-          <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-bold text-center'>
+          <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-rubik-semibold text-center'>
             {aboutTitle}
           </h2>
-          <p className='text-md text-description dark:text-subtitle font-normal text-center mb-4 mt-2'>
+          <p className='text-md text-description dark:text-subtitle font-rubik-regular text-center mb-4 mt-2'>
             {aboutSubtitle}
           </p>
           <div className='flex flex-col md:flex-row mt-6'>
@@ -47,7 +47,7 @@ export default function AboutMe() {
               />
             </div>
             <div className='flex flex-col mt-8 md:mt-0'>
-              <p className='text-md text-description dark:text-lightMode font-normal text-left pb-6'>
+              <p className='text-md text-description dark:text-lightMode font-rubik-regular text-left pb-6'>
                 {aboutDescription}
               </p>
               <div className='flex flex-col md:flex-row flex-wrap'>
@@ -55,7 +55,7 @@ export default function AboutMe() {
               </div>
               <button
                 onClick={handleDownload}
-                className='bg-accent hover:bg-accentHover text-lightMode font-light flex space-x-2 items-center p-3 rounded mt-8 w-40'
+                className='bg-accent hover:bg-accentHover text-lightMode font-rubik-regular flex space-x-2 items-center p-3 rounded mt-8 w-40'
               >
                 <span>{aboutButton}</span>
                 <img

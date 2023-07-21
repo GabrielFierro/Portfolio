@@ -12,10 +12,10 @@ export default function Project() {
       id='projects'
     >
       <article className='h-full flex flex-col text-center'>
-        <h2 className='text-3xl text-title dark:text-lightMode font-semibold'>
+        <h2 className='text-3xl text-title dark:text-lightMode font-rubik-semibold'>
           {t('projects.title')}
         </h2>
-        <p className='text-md text-description dark:text-subtitle font-normal mt-2'>
+        <p className='text-md text-description dark:text-subtitle font-rubik-regular mt-2'>
           {t('projects.subtitle')}
         </p>
         <Card />

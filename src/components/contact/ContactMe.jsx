@@ -11,10 +11,10 @@ export default function ContactMe() {
       className='bg-lightMode dark:bg-darkMode pt-9 lg:pt-16 px-8 pb-12 md:-mt-2'
       id='contact'
     >
-      <h2 className='text-center text-3xl text-title dark:text-lightMode font-semibold'>
+      <h2 className='text-center text-3xl text-title dark:text-lightMode font-rubik-semibold'>
         {t('contact.title')}
       </h2>
-      <p className='text-center text-md text-description dark:text-subtitle font-normal mt-2'>
+      <p className='text-center text-md text-description dark:text-subtitle font-rubik-regular mt-2'>
         {t('contact.subtitle')}
       </p>
       <section className='mt-12'>
@@ -23,10 +23,10 @@ export default function ContactMe() {
             <img src={EmailIcon} alt='Email icon' width='50px' height='50px' />
           </div>
           <div className='flex flex-col text-left px-4'>
-            <h2 className='text-3xl text-title dark:text-lightMode font-normal'>
+            <h2 className='text-3xl text-title dark:text-lightMode font-rubik-regular'>
               Email
             </h2>
-            <span className='text-sm text-description font-light'>
+            <span className='text-sm text-description font-rubik-light'>
               fierrogabriel13@gmail.com
             </span>
           </div>
