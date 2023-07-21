@@ -1,4 +1,4 @@
-li > h2::selection {
+div > #name::selection {
   color: white;
   background: #9a51e0;
 }
