@@ -17,7 +17,8 @@ body {
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('../public/fonts/rubik/Rubik-Light.woff2') format('woff2');
+  src: local('Rubik Font'),
+    url('../public/fonts/rubik/Rubik-Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -25,7 +26,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../public/fonts/rubik/Rubik-Regular.woff2') format('woff2');
+  src: local('Rubik Font'),
+    url('../public/fonts/rubik/Rubik-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -33,7 +35,8 @@ body {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('../public/fonts/rubik/Rubik-SemiBold.woff2') format('woff2');
+  src: local('Rubik Font'),
+    url('../public/fonts/rubik/Rubik-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -41,5 +44,6 @@ body {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../public/fonts/rubik/Rubik-Bold.woff2') format('woff2');
+  src: local('Rubik Font'),
+    url('../public/fonts/rubik/Rubik-Bold.woff2') format('woff2');
 }
