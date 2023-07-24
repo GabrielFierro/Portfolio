@@ -1,8 +1,3 @@
-div > #name::selection {
-  color: white;
-  background: #9a51e0;
-}
-
 .hamburger {
   display: none;
 }
