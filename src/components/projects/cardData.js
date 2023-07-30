@@ -69,7 +69,7 @@ export const data = [
     description:
       'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.',
     stack: ['HTML', 'CSS', 'Git'],
-    code: 'https://github.com/GabrielFierro/3-column-preview-card',
-    demo: 'https://3-column-preview-card-prueba.netlify.app'
+    code: 'https://github.com/GabrielFierro/product-preview',
+    demo: 'https://product-preview-psi-nine.vercel.app/'
   }
 ];
