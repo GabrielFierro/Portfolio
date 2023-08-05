@@ -19,11 +19,11 @@ export default {
       description: '#3F4258', // Color for descriptions like cards, about me and header
       descriptionDark: '#A09BAB', // Color for descriptions in dark mode
       red: '#ef4444', // Used in the * on the form
-      card: '#1F2127', // Background of the card in dark mode
+      card: '#1C1C1C', // Background of the card in dark mode
       cardLight: '#EEEEEE', // Background of the card in light mode
       lightMode: '#F3F3F3', // Secondary color
       lightModeHover: '#EEEEEE', // Secondary color for light mode on hover
-      darkMode: '#1A1C22', // Secondary color for dark mode
+      darkMode: '#161616', // Secondary color for dark mode
       darkModeHover: '#11141B' // Secondary color on hover for dark mode
     },
     extend: {}
