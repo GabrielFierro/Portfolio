@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 export default function Footer() {
   const [t, i18n] = useTranslation('global');
   return (
-    <div className='bg-accent h-72 w-full flex flex-col justify-between text-lightMode text-left p-8'>
+    <div className='bg-cyan dark:bg-violet h-72 w-full flex flex-col justify-between text-black text-left p-8'>
       <div>
         <h2 className='font-rubik-bold text-3xl'>Gabriel</h2>
-        <p className='font-rubik-regular text-md tracking-normal'>
+        <p className='font-rubik-semibold text-md tracking-normal'>
           {t('footer.subtitle')}
         </p>
       </div>
