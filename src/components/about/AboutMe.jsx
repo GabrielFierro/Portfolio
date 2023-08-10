@@ -1,11 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useMemo } from 'react';
-import { lazy } from 'react';
-import DownloadIcon from '../../assets/icons/download.svg';
-import PortfolioScreen from '../../assets/images/portfolio-screen.webp';
+import React, { useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-
-const Technology = lazy(() => import('./Technology'));
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import Icons from './Icons';
+import DownloadIcon from '../../assets/icons/download.svg';
 
 export default function AboutMe() {
   const [t, i18n] = useTranslation('global');
@@ -22,53 +21,73 @@ export default function AboutMe() {
   const aboutTitle = useMemo(() => t('about.title'), [t]);
   const aboutButton = useMemo(() => t('about.button'), [t]);
 
+  const [ref, isInView] = useInView();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    } else {
+      controls.stop();
+    }
+  }, [controls, isInView]);
+  const cardVariant = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.7 },
+      ease: 'easeIn'
+    },
+    hidden: {
+      opacity: 0,
+      scale: 0,
+      transition: { duration: 0.7 },
+      ease: 'easeInOut'
+    }
+  };
+
   return (
-    <section
-      className='h-auto mt-0 md:-mt-2 pt-12 md:pt-24 px-8 xs:px-28 lg:px-32 pb-16 bg-lightMode dark:bg-darkMode'
+    <motion.section
+      ref={ref}
+      variants={cardVariant}
+      initial='hidden'
+      whileInView='visible'
+      animate={controls}
+      className='h-auto mt-0 md:-mt-2 pt-12 md:pt-32 px-8 xs:px-28 lg:px-32 pb-28 bg-lightMode dark:bg-darkMode selection:text-accentText relative'
       id='about'
     >
-      <article className='h-full flex flex-col justify-between'>
+      <article className='h-full flex flex-col justify-between relative z-0'>
         <div className='h-full flex flex-col justify-evenly'>
-          <h2 className='text-3xl lg:text-5xl text-title dark:text-lightMode font-rubik-semibold text-center'>
+          <h2 className='text-3xl lg:text-5xl text-black dark:text-lightMode font-rubik-bold text-center'>
             {aboutTitle}
           </h2>
-          <p className='text-md text-description dark:text-subtitle font-rubik-regular text-center mb-4 mt-2'>
+          <p className='text-lg text-greenEmerald dark:text-yellow font-rubik-semibold text-center mb-4 mt-2'>
             {aboutSubtitle}
           </p>
           <div className='flex flex-col md:flex-row mt-6'>
-            <div className='w-full h-3/4 md:h-72 mr-0 md:mr-12'>
-              <img
-                loading='lazy'
-                className='w-auto h-3/4 md:h-4/5 lg:h-full rounded-md'
-                src={PortfolioScreen}
-                alt=''
-                width='500px'
-                height='300px'
-              />
-            </div>
             <div className='flex flex-col mt-8 md:mt-0'>
-              <p className='text-md text-description dark:text-lightMode font-rubik-regular text-left pb-6'>
+              <p className='text-lg leading-loose text-black dark:text-subtitle font-rubik-regular text-left pb-6'>
                 {aboutDescription}
               </p>
-              <div className='flex flex-col md:flex-row flex-wrap'>
-                <Technology />
-              </div>
-              <button
-                onClick={handleDownload}
-                className='bg-accent hover:bg-accentHover text-lightMode font-rubik-regular flex space-x-2 items-center p-3 rounded mt-8 w-40'
-              >
-                <span>{aboutButton}</span>
-                <img
-                  src={DownloadIcon}
-                  alt='Arrow right'
-                  width='24px'
-                  height='24px'
-                />
-              </button>
             </div>
           </div>
         </div>
       </article>
-    </section>
+      <Icons />
+      <div className='w-full flex justify-center'>
+        <button
+          onClick={handleDownload}
+          className='bg-lightMode hover:bg-lightModeHover dark:bg-lightMode dark:hover:bg-grey text-black font-rubik-semibold flex space-x-2 items-center p-3 rounded mt-8 max-w-lg shadow-[4px_4px_0px_#84FFC9] dark:shadow-[4px_4px_0px_#FFE554] hover:scale-105'
+        >
+          <span>{aboutButton}</span>
+          <img
+            src={DownloadIcon}
+            alt='Arrow right'
+            width='24px'
+            height='24px'
+          />
+        </button>
+      </div>
+    </motion.section>
   );
 }
