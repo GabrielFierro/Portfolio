@@ -5,27 +5,32 @@
     "contact": "Contáctame"
   },
   "header": {
-    "title": "Hola, soy Gabriel Fierro",
+    "title": "Hola, soy ",
+    "name": "Gabriel Fierro",
     "subtitle": "Desarrollador Frontend Jr",
-    "description": "Especializado en CSS, Javascript, y React js situado en Argentina. Con experiencia produciendo trabajo de calidad.",
+    "description_top": "Especializado en CSS, Javascript, y React js situado en ",
+    "description_bottom": ". Soy muy curioso y siempre estoy leyendo blogs, posteos o mirando videos acerca de nuevas actualizaciones con respecto a ",
+    "description_bottom_tech": "tecnologías Frontend.",
+    "country": "Argentina",
     "contact": "Contáctame"
   },
   "about": {
     "title": "Acerca de mi",
     "subtitle": "Mi introducción",
-    "description": "Desarrollador frontend entusiasta, responsable y autodidacta que quiere aprender tecnologías web y crecer profesionalmente. Tengo conocimientos en las siguientes tecnologías.",
+    "description": "Desarrollador frontend entusiasta, responsable y autodidacta que quiere aprender tecnologías web y crecer profesionalmente. Puedo adaptarme muy rápido y, en general, soy muy amigable. Puedo encajar en cualquier equipo y me encanta ayudar a mis compañeros. Tengo conocimientos en las siguientes tecnologías.",
     "button": "Descargar CV"
   },
   "projects": {
     "title": "Proyectos",
     "subtitle": "Trabajos más populares",
     "cardTitle": [
-      "Magenta",
-      "Sunnyside",
+      "Code In Magenta",
+      "Sunnyside Landing Page",
       "Weather App",
       "Travelling Landing Page",
-      "Loopstudios",
-      "Product Preview"
+      "Loopstudios Landing Page",
+      "Product Preview",
+      "Advice Generator"
     ],
     "cardAlt": [
       "Captura de pantalla acerca de la página web Magenta",
@@ -33,16 +38,18 @@
       "Captura de pantalla acerca de the Aplicación de clima",
       "Captura de pantalla acerca de la Travelling Landing Page",
       "Captura de pantalla acerca de la página web Loopstudios",
-      "Captura de pantalla acerca de la página web vista previa del producto"
+      "Captura de pantalla acerca de la página web vista previa del producto",
+      "Captura de pantalla acerca de la página Advice Generator"
     ],
     "cardDeveloped": "Desarrollado con",
     "cardDescription": [
-      "Somos una corporación a nivel mundial la cual enseña, educa e inspira a otras a seguir el camino del desarrollo Front-end!",
-      "Somos una agencia creativa a servicio completo especializada en ayudar a las marcas, a crecer tan rápido con el marketing perfecto para usted.",
-      "La aplicación presenta el clima actual basado en su localización, indicado con temperatura en Celsius, un ícono y fondo personalizado.",
-      "Explora el lugar de sus sueños y encuentre su próximo destino. Únase a nosotros y descubra destinos maravillosos.",
-      "El líder en interacción de RV. Loopstudios ha estado produciendo proyectos de realidad virtual a nivel mundia para grandes compañias.",
-      "Un floral, solar y voluptuosa interpretación compuesta por Olivier Polge, creador de perfumes para la Casa de CHANEL."
+      "Proyecto freelance. Trabajé en un equipo para desarrollar esta Landing Page. Estuve a cargo del desarrollo general de las tres páginas y las vistas mobile, trabajando especialmente con Flexbox y Grid para crear la página de búsqueda de trabajo.",
+      "Creé esta Landing Page basada en un desafío de Frontend Mentor utilizando React. Lo usé para crear componentes reutilizables para así evitar repetir código. La aplicación es completamente responsiva.",
+      "Ésta es una aplicación de clima responsiva hecha con JavaScript utilizando la API open-weather. Es mi primer proyecto en el que utilizo una API, donde podés obtener la información del clima actual desde cualquier localización en la Tierra.",
+      "Construí ésta página web basada en un diseño hecho en Figma por mí. Utlicé React para centrarme en las categorías que el usuario puede elegir, acerca de los diferentes destinos. La aplicación es completamente responsiva e incluye un menú hamburguesa que te lleva a cada sección en la página.",
+      "Creé ésta Landing Page en base a un desafío propuesto por Frontend Mentor utilizando HTML, CSS y JavaScript haciendo foco en la sección de imágenes hecho con grid. La aplicación es totalmente responsiva.",
+      "Desarrollé éste desafío planteado por Frontend Mentor usando HTML, CSS mostrando una tarjeta la cual contiene una imágen con una descripción completa acerca del producto. La aplicación es completamente responsiva.",
+      "Éste es mi segundo proyecto utilizando una API. Para ésta ocasión, me encuentro utilizando el hook useEffect de React para llamar a la API y obtener datos de ella. A su vez, añado los estilos usando Tailwind."
     ],
     "cardCode": "código"
   },
@@ -52,7 +59,9 @@
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
-    "button": "Enviar Mensaje"
+    "button": "Enviar Mensaje",
+    "message_sent": "Mensaje enviado",
+    "email_alert": "Por favor ingrese un email válido."
   },
   "footer": {
     "subtitle": "Desarrollador Frontend Jr",

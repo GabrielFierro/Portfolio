@@ -5,27 +5,33 @@
     "contact": "Contact Me"
   },
   "header": {
-    "title": "Hi, I'm Gabriel Fierro",
+    "title": "Hi, I'm ",
+    "name": "Gabriel Fierro",
     "subtitle": "Frontend Developer Jr",
-    "description": "Specialized in CSS, Javascript, and React js based in Argentina. With experience producing quality work.",
+    "description_top": "Specialized in CSS, Javascript, and React js based in ",
+    "description_bottom": ". I'm very curious and I'm always reading blogs, posts or watching videos about new updates on ",
+    "description_bottom_tech": "Frontend technologies.",
+    "country": "Argentina",
     "contact": "Contact Me"
   },
   "about": {
     "title": "About Me",
     "subtitle": "My Introduction",
-    "description": "Enthusiastic, responsible and self-taught frontend developer who wants to learn web technologies and grow up professionally. I've knowledge in the following technologies.",
-    "button": "Download CV"
+    "description": "Enthusiastic, responsible and self-taught frontend developer who wants to learn web technologies and grow up professionally. I'm able to adapt very quickly and overall I'm really friendly. Who can fit in any team and I love to help my teammates. I've knowledge in the following technologies.",
+    "button": "Download resume"
   },
+
   "projects": {
     "title": "Projects",
     "subtitle": "Most popular work",
     "cardTitle": [
-      "Magenta",
-      "Sunnyside",
+      "Code In Magenta",
+      "Sunnyside Landing Page",
       "Weather App",
       "Travelling Landing Page",
-      "Loopstudios",
-      "Product Preview"
+      "Loopstudios Landing Page",
+      "Product Preview",
+      "Advice Generator"
     ],
     "cardAlt": [
       "Screenshot about the Magenta website",
@@ -33,16 +39,17 @@
       "Screenshot about the Weather App",
       "Screenshot about the Travelling Landing Page",
       "Screenshot about the Loopstudios Landing Page",
-      "Screenshot about the Product Preview website"
+      "Screenshot about the Product Preview website",
+      "Screenshot about the Advice Generator website"
     ],
-    "cardDeveloped": "Developed with",
     "cardDescription": [
-      "We are a World Wide corporation in which we teach, educate and inspire others to follow the path of Front-end development!",
-      "We are a full-service creative agency specializing in helping brands grow fast with marketing for you.",
-      "It shows the current weather based on your location with temperature in Celsius, an icon, and personalized background.",
-      "Explore your dream place and find your next destination. Join us and discover beautiful destinations.",
-      "The leader in interactive VR. Loopstudios has been producing world-class virtual reality projects for greatest companies.",
-      "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
+      "Freelance project. I worked in a team to develop this Landing Page. I was in charge of the general development of all three pages and mobile views, working specially with Flexbox and Grid to create the job board page.",
+      "I built this Landing Page base on a challenge from Frontend Mentor using React. I use it to make reusables components to avoid repeat code. The app is fully responsive.",
+      "This is a responsive weather app made with JavaScript using open-weather API. It's my first project using an API, where you can get the current weather data for any location on Earth.",
+      "I built this website based on a figma design made by me. I use React to focus on the categories that the the user can choice, about the different destinations. The app is fully responsive and include a hamburger menu to go to each section in the page.",
+      "I built this Landing Page base on a challenge from Frontend Mentor using HTML, CSS, and JavaScript making focus on the images section made with grid. The app is fully responsive.",
+      "I built this challenge base on the challenge from Frontend Mentor using HTML, CSS displaying a card which contains an image with a full description about the product. The app is fully responsive.",
+      "This is my second project using an API. For this ocassion, I'm using the useEffect hook from React to call the API and get the data from it. I'm adding the styles with Tailwind."
     ],
     "cardCode": "code"
   },
@@ -52,7 +59,9 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "button": "Send Message"
+    "button": "Send Message",
+    "message_sent": "Message sent",
+    "email_alert": "Please provide a valid email address."
   },
   "footer": {
     "subtitle": "Frontend Developer Jr",
