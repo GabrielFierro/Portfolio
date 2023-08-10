@@ -10,7 +10,6 @@ export default {
       'rubik-bold': ['Rubik Bold', 'sans-serif']
     },
     colors: {
-      title: '#00003D', // Color for titles
       subtitle: '#9E9E9E', // Color for subtitles
       lightMode: '#F3F3F3', // Secondary color
       lightModeHover: '#EBEBEB', // Secondary color for light mode on hover
