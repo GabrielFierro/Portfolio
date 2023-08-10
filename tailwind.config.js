@@ -10,23 +10,46 @@ export default {
       'rubik-bold': ['Rubik Bold', 'sans-serif']
     },
     colors: {
-      accent: '#8531D3', // Accent color
-      accentDark: '#C49AEB', // Accent color in dark mode
-      accentHover: '#9A51E0', // Accent color on hover in light mode
-      accentHoverDark: '#D0ACF1', // Accent color on hover in dark mode
       title: '#00003D', // Color for titles
       subtitle: '#9E9E9E', // Color for subtitles
-      description: '#3F4258', // Color for descriptions like cards, about me and header
-      descriptionDark: '#A09BAB', // Color for descriptions in dark mode
-      red: '#ef4444', // Used in the * on the form
-      card: '#1C1C1C', // Background of the card in dark mode
-      cardLight: '#EEEEEE', // Background of the card in light mode
       lightMode: '#F3F3F3', // Secondary color
-      lightModeHover: '#EEEEEE', // Secondary color for light mode on hover
-      darkMode: '#161616', // Secondary color for dark mode
-      darkModeHover: '#11141B' // Secondary color on hover for dark mode
+      lightModeHover: '#EBEBEB', // Secondary color for light mode on hover
+      darkMode: '#1B1A20', // Secondary color for dark mode
+      grey: '#E2E8EC',
+      green: '#84FFC9',
+      greenDark: '#00C26E',
+      greenEmerald: '#1FCE82',
+      violet: '#796EFF',
+      pink: '#ECA0FF',
+      pinkDark: '#8D00B0',
+      pinkHelio: '#DB81F1',
+      black: '#000000',
+      cyan: '#61E7FF',
+      cyanLight: '#96D7E2',
+      cyanDark: '#00D9FF',
+      yellow: '#FFE554',
+      placeholderDark: '#2A2833'
     },
-    extend: {}
+    extend: {
+      animation: {
+        animate: 'animate 5s ease-in-out infinite'
+      },
+      keyframes: {
+        animate: {
+          '0%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+          '50%': { borderRadius: '30% 60% 70% 40%/50% 60% 30% 40%' },
+          '100%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' }
+        },
+        customPulse: {
+          '0%, 100%': {
+            opacity: '1'
+          },
+          '50%': {
+            opacity: '.5'
+          }
+        }
+      }
+    }
   },
   plugins: []
 };
