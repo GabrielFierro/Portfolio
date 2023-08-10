@@ -31,7 +31,7 @@ export default function ContactMe() {
             </svg>
           </div>
           <div className='flex flex-col text-left px-4'>
-            <h2 className='text-3xl text-title dark:text-lightMode font-rubik-bold'>
+            <h2 className='text-3xl text-black dark:text-lightMode font-rubik-bold'>
               Email
             </h2>
             <span className='text-sm text-description dark:text-subtitle font-rubik-regular'>
