@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ProfilePicture from '../../assets/images/profile-picture.webp';
+import Video from '../../assets/video/background_video.webm';
 
 export default function Header() {
   const [t, i18n] = useTranslation('global');
@@ -25,12 +26,9 @@ export default function Header() {
         loop
         id='myVideo'
       >
-        <source
-          src='/src/assets/video/background_video.webm'
-          type='video/mp4'
-        ></source>
+        <source src={Video} type='video/mp4'></source>
       </video>
-      <section className='inset-0 flex flex-col lg:h-4/6 sm:justify-center h-auto z-0 absolute mt-4 lg:mt-20 pt-24 md:pt-0 xs:px-28 sm:px-0 lg:px-32 pb-12 md:items-center justify-center'>
+      <section className='inset-0 flex flex-col lg:h-4/6 sm:justify-center h-auto z-0 absolute mt-16 lg:mt-20 pt-24 md:pt-0 xs:px-28 sm:px-0 lg:px-32 pb-12 md:items-center justify-center'>
         <article className='flex flex-row flex-wrap justify-evenly md:justify-center'>
           <motion.div
             variants={{
@@ -43,7 +41,7 @@ export default function Header() {
             className='flex justify-center flex-1 order-1 md:order-3 md:items-center basis-1/3'
           >
             <img
-              className='w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 my-9 rounded-full animate-[animate_5s_ease-in-out_infinite]'
+              className='w-32 sm:w-48 md:w-56 h-32 sm:h-48 md:h-56 my-9 rounded-full animate-[animate_5s_ease-in-out_infinite]'
               src={ProfilePicture}
               alt='Profile picture'
               width='150px'
