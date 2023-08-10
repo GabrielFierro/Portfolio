@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "canvas-confetti": "^1.6.0",
+    "framer-motion": "^10.15.1",
     "i18next": "^23.2.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.0.2",
+    "react-intersection-observer": "^9.5.2",
     "react-scroll": "^1.8.9",
     "vite-plugin-svgr": "^3.2.0"
   },
