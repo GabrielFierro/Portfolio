@@ -8,7 +8,7 @@ const Footer = lazy(() => import('./components/footer/Footer'));
 
 function App() {
   return (
-    <>
+    <div className='bg-lightMode dark:bg-darkMode'>
       <Navbar />
       <Header />
       <Suspense fallback={<div></div>}>
@@ -17,7 +17,7 @@ function App() {
         <ContactMe />
         <Footer />
       </Suspense>
-    </>
+    </div>
   );
 }
 
