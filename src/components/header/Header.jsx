@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ProfilePicture from '../../assets/images/profile-picture.webp';
-import './header.css';
 
 export default function Header() {
   const [t, i18n] = useTranslation('global');

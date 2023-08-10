@@ -1,16 +1,17 @@
 /* eslint-disable no-unused-vars */
-import ArrowAlt from '../../assets/icons/dark-mode/arrow-alt.svg';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import confetti from 'canvas-confetti';
+import ArrowAlt from '../../assets/icons/arrow-alt.svg';
 
 export default function Form() {
+  const [emailSent, setEmailSent] = useState(false);
   const [t, i18n] = useTranslation('global');
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         'service_s5ft84n',
@@ -21,6 +22,8 @@ export default function Form() {
       .then(
         (result) => {
           console.log(result.text);
+          setEmailSent(true);
+          confetti();
         },
         (error) => {
           console.log(error.text);
@@ -50,7 +53,7 @@ export default function Form() {
         required
         autoComplete='given-name'
         placeholder={t('contact.name')}
-        className='bg-accent bg-opacity-20 dark:bg-accentDark placeholder:text-description placeholder:font-rubik-regular text-sm font-rubik-light py-6 px-5 mb-6 rounded-md w-full'
+        className='bg-violet bg-opacity-20 dark:bg-placeholderDark dark:text-black placeholder:text-black dark:placeholder:text-subtitle placeholder:font-rubik-regular text-md font-rubik-light py-6 px-5 mb-6 rounded-md w-full'
       ></input>
       <label
         className='after:content-["*"] after:ml-0.5 after:text-red'
@@ -66,8 +69,11 @@ export default function Form() {
         required
         autoComplete='off'
         placeholder='Email'
-        className='peer bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-rubik-regular text-sm font-rubik-light py-6 px-5 mb-6 rounded-md w-full'
+        className='peer bg-violet bg-opacity-20 dark:bg-placeholderDark dark:text-black placeholder:text-black dark:placeholder:text-subtitle placeholder:font-rubik-regular text-md font-rubik-light py-6 px-5 mb-2 rounded-md w-full'
       ></input>
+      <p className='invisible peer-invalid:visible text-pinkDark dark:text-cyanDark text-md font-rubik-semibold pb-2 mb-4'>
+        {t('contact.email_alert')}
+      </p>
       <label
         className='after:content-["*"] after:ml-0.5 after:text-red'
         htmlFor='message'
@@ -81,17 +87,24 @@ export default function Form() {
         required
         placeholder={t('contact.message')}
         autoComplete='off'
-        className='bg-accent bg-opacity-20 dark:bg-accentDark  placeholder:text-description placeholder:font-rubik-regular text-sm font-rubik-light py-12 px-5 mb-6 rounded-md w-full'
+        className='bg-violet bg-opacity-20 dark:bg-placeholderDark dark:text-black placeholder:text-black dark:placeholder:text-subtitle placeholder:font-rubik-regular text-md font-rubik-light py-12 px-5 mb-6 rounded-md w-full'
       />
       <button
         id='button'
         name='button'
         value='Send'
-        className='bg-accent hover:bg-accentHover text-lightMode font-rubik-light flex space-x-2 items-center p-3 rounded mt-8'
+        className='bg-lightMode hover:bg-lightModeHover shadow-[-4px_4px_0px_#796EFF] dark:shadow-[-4px_4px_0px_#61E7FF] hover:scale-105 text-black font-rubik-regular flex space-x-2 items-center p-3 rounded mt-8'
       >
         <p>{t('contact.button')}</p>
         <img src={ArrowAlt} alt='Arrow right' width='24px' height='24px' />
       </button>
+      {emailSent ? (
+        <span className='text-lg font-rubik-semibold text-violet mt-12 pt-12'>
+          {t('contact.message_sent')}
+        </span>
+      ) : (
+        ''
+      )}
     </form>
   );
 }
