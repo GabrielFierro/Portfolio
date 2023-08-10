@@ -88,7 +88,7 @@ export const data = [
     alt: 'Screenshot about the Advice Generator website',
     description:
       "This is my second project using an API. For this ocassion I'm using the useEffect hook from React to call the API and get the data from it. I'm adding the styles with Tailwind.",
-    stack: [Html, CSS, JavaScript, React, Tailwind, Git],
+    stack: [Html, Css, JavaScript, React, Tailwind, Git],
     code: 'https://github.com/GabrielFierro/advice-generator',
     demo: 'https://advice-generator-two-gold.vercel.app/'
   }
