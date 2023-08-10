@@ -72,7 +72,7 @@ export default function Navbar() {
             spy={true}
             to='about'
             smooth={true}
-            offset={-80}
+            offset={0}
             duration={900}
             onClick={closeMenu}
           >
@@ -85,7 +85,7 @@ export default function Navbar() {
             spy={true}
             to='projects'
             smooth={true}
-            offset={-60}
+            offset={0}
             duration={900}
             onClick={closeMenu}
           >
@@ -98,7 +98,7 @@ export default function Navbar() {
             spy={true}
             to='contact'
             smooth={true}
-            offset={-50}
+            offset={15}
             duration={900}
             onClick={closeMenu}
           >
@@ -111,10 +111,10 @@ export default function Navbar() {
   );
 
   return (
-    <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-24 w-full top-0 left-0 p-4 z-10 dark:z-10'>
+    <div className='bg-lightMode dark:bg-darkMode fixed drop-shadow-sm dark:drop-shadow-md h-16 w-full top-0 left-0 p-4 z-50 dark:z-10 selection:text-accentText'>
       <div className='h-full'>
         <div className='flex flex-row justify-around items-center max-w-screen-xl m-auto h-full py-0 px-4'>
-          <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-rubik-bold selection:text-accent'>
+          <h2 className='text-title dark:text-lightMode text-xl lg:text-2xl font-rubik-bold'>
             Gabriel
           </h2>
           {navMenu}
