@@ -119,7 +119,7 @@ export default function Navbar() {
           </h2>
           {navMenu}
           <div
-            className='cursor-pointer'
+            className='cursor-pointer hover:bg-lightModeHover dark:hover:bg-placeholderDark p-2 border-opacity-100 rounded-md'
             onClick={() => {
               handleIcon();
               handleThemeSwitch();
