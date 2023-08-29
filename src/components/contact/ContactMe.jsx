@@ -13,7 +13,7 @@ export default function ContactMe() {
       <h2 className='text-center text-3xl lg:text-5xl text-black dark:text-lightMode font-rubik-bold'>
         {t('contact.title')}
       </h2>
-      <p className='text-center text-lg text-accentText dark:text-cyan font-rubik-semibold mt-2'>
+      <p className='text-center text-lg text-violet dark:text-cyan font-rubik-semibold mt-2'>
         {t('contact.subtitle')}
       </p>
       <section className='mt-12'>
