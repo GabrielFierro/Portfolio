@@ -45,12 +45,12 @@ export default function Card() {
         initial='hidden'
         whileInView='visible'
         animate={controls}
-        className='dark:bg-darkMode z-0 dark:z-0 w-full h-full my-20 flex flex-col md:flex-row justify-evenly text-center md:text-left'
+        className='dark:bg-darkMode z-0 dark:z-0 w-full h-full my-20 flex flex-col md:flex-row justify-evenly items-center text-center md:text-left'
       >
         <img
           loading='lazy'
           decoding='async'
-          className={`rounded w-full md:w-3/5 h-64 md:h-96 max-w-lg shadow-[rgba(0,_0,_0,_0.2)_0px_30px_40px_-7px] md:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] md:dark:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] ${
+          className={`rounded w-full md:w-3/5 h-80 md:h-96 max-w-lg shadow-[rgba(0,_0,_0,_0.2)_0px_30px_40px_-7px] md:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] md:dark:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] ${
             data.id % 2 === 0 ? 'order-2' : 'order-1 md:order-2'
           }`}
           src={data.src}
@@ -75,7 +75,7 @@ export default function Card() {
                 return <img key={text} src={text} alt={text} />;
               })}
             </ul>
-            <div className='flex flex-row md:space-x-6 justify-center md:justify-start mt-6'>
+            <div className='flex flex-row space-x-4 md:space-x-6 justify-center md:justify-start mt-6'>
               <a href={data.code} target='_blank' rel='noreferrer'>
                 <button className='bg-lightMode hover:bg-lightModeHover dark:bg-cardLight dark:hover:bg-grey text-black hover:scale-105 flex space-x-3 items-center p-3 rounded mt-8'>
                   <p className='uppercase font-rubik-regular'>
