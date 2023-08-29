@@ -7,7 +7,7 @@
   "header": {
     "title": "Hi, I'm ",
     "name": "Gabriel Fierro",
-    "subtitle": "Frontend Developer Jr",
+    "subtitle": "Jr Frontend Developer",
     "description_top": "Specialized in CSS, Javascript, and React js based in ",
     "description_bottom": ". I'm very curious and I'm always reading blogs, posts or watching videos about new updates on ",
     "description_bottom_tech": "Frontend technologies.",
@@ -64,7 +64,7 @@
     "email_alert": "Please provide a valid email address."
   },
   "footer": {
-    "subtitle": "Frontend Developer Jr",
+    "subtitle": "Jr Frontend Developer",
     "about": "About Me",
     "projects": "Projects",
     "contact": "Contact Me"
