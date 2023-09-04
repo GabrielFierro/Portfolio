@@ -11,11 +11,11 @@
 }
 
 .nav-item .active {
-  border-bottom: 3px solid #796eff;
+  border-bottom: 3px solid #1fce82;
 }
 
 .nav-item:hover {
-  border-bottom: 3px solid #796eff;
+  border-bottom: 3px solid #1fce82;
 }
 
 @media screen and (max-width: 940px) {
