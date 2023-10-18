@@ -58,7 +58,7 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 0.25 }}
             className='dark:bg-transparent flex flex-col basis-full md:basis-7/12 order-2 md:order-1 text-left w-auto mt-0 md:mt-20 justify-center md:items-stretch px-8'
           >
-            <motion.div className='text-pinkHelio dark:text-green text-sm md:text-lg font-rubik-bold md:pt-2 pb-1'>
+            <motion.div className='text-violet dark:text-green text-sm md:text-lg font-rubik-bold md:pt-2 pb-1'>
               {t('header.subtitle')}
             </motion.div>
             <h1 className='text-black dark:text-lightMode text-3xl md:text-4xl lg:text-5xl font-rubik-bold pb-1'>
