@@ -47,3 +47,28 @@ body {
   src: local('Rubik Font'),
     url('../public/fonts/rubik/Rubik-Bold.woff2') format('woff2');
 }
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border: 4px solid #fff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #61e7ff;
+}
+
+.dark .overflow-y-auto::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 100%, 0.2);
+  border: 4px solid #121927;
+}
+
