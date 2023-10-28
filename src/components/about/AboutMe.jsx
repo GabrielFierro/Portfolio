@@ -11,7 +11,7 @@ export default function AboutMe() {
 
   const handleDownload = React.useCallback(() => {
     const url =
-      'https://drive.google.com/file/d/1J2P_sPeny-OSaVB7M_kXZhbwTLwAvudL/view?usp=sharing';
+      'https://drive.google.com/file/d/1kH-rYPUibhtwP6CLFp1FBTAsk5-0Q1iA/view?usp=drive_link';
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null;
   }, []);
